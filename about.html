@@ -255,360 +255,368 @@
     }
 
 
-/* Media Queries */
-/* Small Devices (360px - 575px) */
-@media (min-width:300px) and (max-width: 575px) {
- /* nav {
-        flex-direction: column;
-        align-items: flex-start;
-    } */
+    /* Media Queries */
+    /* Small Devices (360px - 575px) */
+    @media (min-width:300px) and (max-width: 575px) {
+        .logo img {
+            height: 40px;
+        }
 
-    .logo img {
-        height: 40px;
-    }
+        .logo {
+            order: 1;
+        }
 
-    /* .navul.show {
-        display: flex;
-    } */
-    .logo{
-        order: 1;
-    }
+        .navul {
+            order: 3;
+            width: 100%;
+            flex-direction: column;
+            width: 100%;
+            align-items: center;
+            justify-content: space-between;
+            gap: 0.7rem;
+            height: 0;
+            overflow: hidden;
+            padding: 0;
+        }
 
-    .navul{
-        order: 3;
-        width: 100%;
-        flex-direction: column;
-        width: 100%;
-        align-items: center;
-        justify-content: space-between;
-        gap: 0.7rem;
-        height: 0;
-        overflow: hidden;
-        padding: 0;
-    }
-    .hamburger-icon {
-        border: none;
-        background-color: transparent;
-        display: block;
-    }
-    .ham-icon {
-        display: block;
-        order: 2;
-    }
-    i.fa-solid.fa-x {
-        display: none;
-    }
-    .hamburger-icon .fa-bars,
-    .hamburger-icon .fa-x {
-        color: white;
-        font-size: 28px;
-        cursor: pointer;
-    }
-    .nav:has(input[type="checkbox"]:checked) .navul {
-        margin-top: 1rem;
-        height: 270px;
-    }
+        .hamburger-icon {
+            border: none;
+            background-color: transparent;
+            display: block;
+        }
 
-    .nav:has(input[type="checkbox"]:checked) .fa-bars {
-        display: none;
-    }
+        .ham-icon {
+            display: block;
+            order: 2;
+        }
 
-    .nav:has(input[type="checkbox"]:checked) .fa-x {
-        display: inline-block;
-    }
-    .navright {
-        display: none;
-        order: 2;
-    }
+        i.fa-solid.fa-x {
+            display: none;
+        }
 
+        .hamburger-icon .fa-bars,
+        .hamburger-icon .fa-x {
+            color: white;
+            font-size: 28px;
+            cursor: pointer;
+        }
 
+        .nav:has(input[type="checkbox"]:checked) .navul {
+            margin-top: 1rem;
+            height: 270px;
+        }
 
-    /* nav {
-        flex-direction: column;
-        gap: 1em;
-    } */
-/* 
-    .navul {
-        display: none;
-        gap: 0.5em;
-    } */
+        .nav:has(input[type="checkbox"]:checked) .fa-bars {
+            display: none;
+        }
 
-    .features {
-        flex-direction: column;
-        gap: 2em;
-    }
-    .container h2 {
-    color: #03346E;
-    font-size: 30px;
-    text-align: center;
-    margin-top: 1em;
-}
-.container p{
-    font-size: 22px;
-    line-height: 24px;
-}
+        .nav:has(input[type="checkbox"]:checked) .fa-x {
+            display: inline-block;
+        }
 
-    .abtus {
-        flex-direction: column;
-        align-items: center;
-    }
+        .navright {
+            display: none;
+            order: 2;
+        }
 
-    .abtus img {
-        width: 100%;
-        height: auto;
-    }
+        .features {
+            flex-direction: column;
+            gap: 2em;
+        }
 
-    .intropara {
-        margin: 1em;
-    }
+        .container h2 {
+            color: #03346E;
+            font-size: 30px;
+            text-align: center;
+            margin-top: 1em;
+        }
 
-    .abouticon {
-        flex-direction: column;
-        align-items: center;
-        gap: 2em;
-        margin-left: 3em;
-    }
+        .container p {
+            font-size: 22px;
+            line-height: 24px;
+        }
 
-    .footer {
-        flex-direction: column;
-        align-items: center;
-        gap: 2em;
-    }
+        .abtus {
+            flex-direction: column;
+            align-items: center;
+        }
 
-    .footer {
-        flex-direction: column;
-        align-items: center;
-        height: auto;
-        padding: 0;
-        gap: 1em;
-        padding-top: 2em;
-        padding-bottom: 1em;
-    }
-    .footer li{
-        line-height: 32px;
-    }
+        .abtus img {
+            width: 100%;
+            height: auto;
+        }
 
-    .footer .links,
-    .footer .mid-links,
-    .footer .f-contact,
-    .footer .connect {
-        width: 100%;
-        text-align: center;
-    }
-    .footer .f-contact p {
-        text-align: center;
-        width: 98%;
-    }
-}
+        .intropara {
+            margin: 1em;
+        }
 
-/* Medium Devices (576px - 768px) */
-@media (min-width: 576px) and (max-width: 768px) {
-    .abtus {
-        flex-direction: column;
-        align-items: center;
+        .abouticon {
+            flex-direction: column;
+            align-items: center;
+            gap: 2em;
+            margin-left: 3em;
+        }
+
+        .footer {
+            flex-direction: column;
+            align-items: center;
+            gap: 2em;
+        }
+
+        .footer {
+            flex-direction: column;
+            align-items: center;
+            height: auto;
+            padding: 0;
+            gap: 1em;
+            padding-top: 2em;
+            padding-bottom: 1em;
+        }
+
+        .footer li {
+            line-height: 32px;
+        }
+
+        .footer .links,
+        .footer .mid-links,
+        .footer .f-contact,
+        .footer .connect {
+            width: 100%;
+            text-align: center;
+        }
+
+        .footer .f-contact p {
+            text-align: center;
+            width: 98%;
+        }
     }
 
-    .abtus img {
-        width: 100%;
-        height: auto;
-    }
-    .icon img{
-        height: 5em;
-    }
-    .features{
-        padding: 3em 20px;
-    }
-    .feature p{
-        font-size: 22px;
-    }
-    .container h2{
-        margin-top: 1em;
-        font-size: 49px;
-        text-align: center;
-    }
-    .container p{
-        font-size:28px;
-        line-height: 31px;
-    }
-    .intropara {
-        margin: 1em;
+    /* Medium Devices (576px - 768px) */
+    @media (min-width: 576px) and (max-width: 768px) {
+        .abtus {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .abtus img {
+            width: 100%;
+            height: auto;
+        }
+
+        .icon img {
+            height: 5em;
+        }
+
+        .features {
+            padding: 3em 20px;
+        }
+
+        .feature p {
+            font-size: 22px;
+        }
+
+        .container h2 {
+            margin-top: 1em;
+            font-size: 49px;
+            text-align: center;
+        }
+
+        .container p {
+            font-size: 28px;
+            line-height: 31px;
+        }
+
+        .intropara {
+            margin: 1em;
+        }
+
+        .abouticon {
+            flex-direction: column;
+            align-items: center;
+            gap: 2em;
+        }
+
+        .footer {
+            flex-direction: column;
+            align-items: center;
+            height: auto;
+            padding-bottom: 2em;
+            gap: 0;
+            gap: 1em;
+        }
+
+        .footer .links,
+        .footer .mid-links,
+        .footer .f-contact,
+        .footer .connect {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 1em;
+        }
+
+        .footer .f-contact p {
+            text-align: center;
+            padding: 0em 4em;
+        }
     }
 
-    .abouticon {
-        flex-direction: column;
-        align-items: center;
-        gap: 2em;
+    /* Large Devices (769px - 991px) */
+    @media (min-width: 769px) and (max-width: 991px) {
+        .abtus img {
+            width: 25em;
+            height: 524px;
+            display: flex;
+            margin: auto;
+        }
+
+        .container {
+            gap: 3em;
+        }
+
+        .container h2 {
+            text-align: center;
+        }
+
+        .container p {
+            font-size: 1.7em;
+            line-height: 1em;
+        }
+
+        .abtus {
+            display: flex;
+            margin-bottom: 4em;
+            flex-direction: column;
+        }
+
+        .intropara {
+            margin: 1em;
+        }
+
+        .abouticon {
+            flex-direction: column;
+            align-items: center;
+            gap: 3em;
+        }
+
+        .footer {
+            flex-direction: column;
+            align-items: center;
+            gap: 2em;
+        }
+
+        .footer {
+            flex-direction: row;
+            justify-content: space-around;
+            height: auto;
+            padding-bottom: 2em;
+            align-items: center;
+        }
+
+        .footer .links,
+        .footer .mid-links,
+        .footer .f-contact,
+        .footer .connect {
+            text-align: center;
+            margin-bottom: 1em;
+        }
+
+        .links {
+            width: 116px;
+        }
+
+        .footer .f-contact p {
+            text-align: center;
+        }
+
+        .socialmedia {
+            display: flex;
+            flex-direction: column;
+        }
     }
 
-    .footer {
-        flex-direction: column;
-        align-items: center;
-        height: auto;
-        padding-bottom: 2em;
-        gap: 0;
-        gap: 1em;
-    }
+    /* Extra Large Devices (992px - 1200px) */
+    @media (min-width: 992px) and (max-width: 1200px) {
+        nav {
+            flex-direction: row;
+            gap: 1em;
+        }
 
-    .footer .links,
-    .footer .mid-links,
-    .footer .f-contact,
-    .footer .connect {
-        width: 100%;
-        text-align: center;
-        margin-bottom: 1em;
-    }
+        .navul {
+            flex-direction: row;
+            gap: 1em;
+        }
 
-    .footer .f-contact p {
-        text-align: center;
-        padding: 0em 4em;
-    }
-}
+        .features {
+            flex-direction: row;
+            gap: 1em;
+        }
 
-/* Large Devices (769px - 991px) */
-@media (min-width: 769px) and (max-width: 991px) {
-    .abtus img {
-        width: 25em;
-        height: 524px;
-        display: flex;
-        margin: auto;
-    }
-    .container{
-        gap: 3em;
-    }
-    .container h2{
-        text-align: center;
-    }
-    .container p{
-        font-size: 1.7em;
-        line-height: 1em;
-    }
-    .abtus {
-    display: flex;
-    margin-bottom: 4em;
-    flex-direction: column;
-}
-    .intropara {
-        margin: 1em;
-    }
+        .abtus {
+            flex-direction: row;
+            align-items: center;
+        }
 
-    .abouticon {
-        flex-direction: column;
-        align-items: center;
-        gap: 3em;
-    }
+        .abtus img {
+            width: 500px;
+            height: auto;
+        }
 
-    .footer {
-        flex-direction: column;
-        align-items: center;
-        gap: 2em;
-    }
+        .intropara {
+            margin: 1em;
+        }
 
-    .footer {
-        flex-direction: row;
-        justify-content: space-around;
-        height: auto;
-        padding-bottom: 2em;
-        align-items: center;
-    }
+        .abouticon {
+            flex-direction: row;
+            align-items: center;
+            gap: 1em;
+        }
 
-    .footer .links,
-    .footer .mid-links,
-    .footer .f-contact,
-    .footer .connect {
-        text-align: center;
-        margin-bottom: 1em;
-    }
-.links{
-    width: 116px;
-}
-    .footer .f-contact p {
-        text-align: center;
-    }
-    .socialmedia{
-        display: flex;
-        flex-direction: column;
-    }
-}
+        .footer {
+            flex-direction: row;
+            align-items: center;
+            gap: 1em;
+        }
 
-/* Extra Large Devices (992px - 1200px) */
-@media (min-width: 992px) and (max-width: 1200px) {
-    nav {
-        flex-direction: row;
-        gap: 1em;
-    }
+        .footer {
+            flex-direction: column;
+            align-items: center;
+        }
 
-    .navul {
-        flex-direction: row;
-        gap: 1em;
-    }
-
-    .features {
-        flex-direction: row;
-        gap: 1em;
-    }
-
-    .abtus {
-        flex-direction: row;
-        align-items: center;
-    }
-
-    .abtus img {
-        width: 500px;
-        height: auto;
-    }
-
-    .intropara {
-        margin: 1em;
-    }
-
-    .abouticon {
-        flex-direction: row;
-        align-items: center;
-        gap: 1em;
-    }
-
-    .footer {
-        flex-direction: row;
-        align-items: center;
-        gap: 1em;
-    }
-    .footer {
-        flex-direction: column;
-        align-items: center;
-    }
-    .footer .f-contact, .footer .links, .footer .mid-links, .footer .connect {
-        width: 100%;
-        text-align: center;
-    }
+        .footer .f-contact,
+        .footer .links,
+        .footer .mid-links,
+        .footer .connect {
+            width: 100%;
+            text-align: center;
+        }
 
 
-    .footer {
-        flex-direction: row;
-        justify-content: space-between;
-        height: auto;
-        padding-bottom: 2em;
-    }
+        .footer {
+            flex-direction: row;
+            justify-content: space-between;
+            height: auto;
+            padding-bottom: 2em;
+        }
 
-    .footer .links,
-    .footer .mid-links,
-    .footer .f-contact,
-    .footer .connect {
-        width: 45%;
-        text-align: center;
-        margin-bottom: 1em;
-    }
+        .footer .links,
+        .footer .mid-links,
+        .footer .f-contact,
+        .footer .connect {
+            width: 45%;
+            text-align: center;
+            margin-bottom: 1em;
+        }
 
-    .footer .f-contact p {
-        text-align: center;
+        .footer .f-contact p {
+            text-align: center;
+        }
     }
-}
-
 </style>
 
 <body>
     <nav>
         <div class="logo">
-        <a href="index.html"><img src="logo1.png" alt=""></a>
+            <a href="index.html"><img src="logo1.png" alt=""></a>
         </div>
         <div class="nav">
             <ul class="navul">
@@ -698,7 +706,7 @@
             </div>
         </div>
         <div class="iconbg">
-            <i class="fa fa-building-o" aria-hidden="true" id="fouricon"></i> 
+            <i class="fa fa-building-o" aria-hidden="true" id="fouricon"></i>
             <div class="icontitle">
                 <p>Year of Establishment</p>
                 <span>1985</span>
@@ -734,9 +742,15 @@
                 <a href="index.html">
                     <li>HOME</li>
                 </a>
-               <a href="about.html"> <li>ABOUT US</li></a>
-              <a href=""> <li>GALLERY</li></a>
-               <a href="contact.html"> <li>CONTACT US</li></a>
+                <a href="about.html">
+                    <li>ABOUT US</li>
+                </a>
+                <a href="">
+                    <li>GALLERY</li>
+                </a>
+                <a href="contact.html">
+                    <li>CONTACT US</li>
+                </a>
             </ul>
         </div>
         <div class="mid-links">
@@ -757,12 +771,12 @@
         <div class="connect">
             <h4>CONNECT</h4>
             <div class="socialmedia">
-            <a href=""><img src="facebook.png" alt=""></a>
-            <a href=""><img src="linkedin.png" alt=""></a>
-            <a href=""><img src="youtube.png" alt=""></a>
-            <a href=""><img src="instagram.png" alt=""></a>
-            <a href=""><img src="twitter.png" alt=""></a>
-        </div>
+                <a href=""><img src="facebook.png" alt=""></a>
+                <a href=""><img src="linkedin.png" alt=""></a>
+                <a href=""><img src="youtube.png" alt=""></a>
+                <a href=""><img src="instagram.png" alt=""></a>
+                <a href=""><img src="twitter.png" alt=""></a>
+            </div>
         </div>
     </div>
 </body>

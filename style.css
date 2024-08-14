@@ -5,10 +5,12 @@
     text-decoration: none;
     list-style: none;
 }
+
 body {
     background-color: #e1e1e1;
     font-family: "Poppins", sans-serif;
 }
+
 nav {
     display: flex;
     align-items: center;
@@ -18,6 +20,7 @@ nav {
     color: white;
     background-color: #021526;
 }
+
 .logo img {
     height: 50px;
 }
@@ -27,30 +30,37 @@ nav {
     background-color: transparent;
     display: none;
 }
+
 .hamburger-icon .fa-bars,
 .hamburger-icon .fa-x {
     color: white;
     font-size: 1rem;
     cursor: pointer;
 }
+
 .hamburger-icon input[type="checkbox"] {
     appearance: none;
 }
+
 .navul {
     display: flex;
     gap: 1rem;
 }
+
 .navul li {
     color: white;
     font-size: 20px;
 }
-.navul li:hover{
+
+.navul li:hover {
     color: #3e90f5;
 }
+
 .navright {
     display: flex;
     gap: 1em;
 }
+
 .slogan {
     color: #03346E;
     font-family: "Style Script", cursive;
@@ -58,12 +68,15 @@ nav {
     display: flex;
     justify-content: center;
 }
+
 .bannerimg {
     position: relative;
 }
+
 .bannerimg img {
     width: 100%;
 }
+
 .bannertitle {
     width: 100%;
     position: absolute;
@@ -73,10 +86,12 @@ nav {
     text-align: center;
     transform: translate(-50%, -50%);
 }
+
 .bannertitle span {
     text-transform: uppercase;
     display: block;
 }
+
 .text1 {
     font-size: 60px;
     font-weight: 700;
@@ -84,6 +99,7 @@ nav {
     position: relative;
     animation: text 3s 1;
 }
+
 .text2 {
     font-size: 20px;
     color: white;
@@ -105,6 +121,7 @@ nav {
         margin-bottom: 40px;
     }
 }
+
 .videosec h3 {
     display: flex;
     justify-content: center;
@@ -119,10 +136,12 @@ nav {
     font-size: 20px;
     color: white;
 }
+
 .slide img {
     height: 300px;
     width: 300px;
 }
+
 .slide h3 {
     font-family: "Arimo", sans-serif;
     font-size: 20px;
@@ -130,19 +149,23 @@ nav {
     background-color: #20181899;
     color: #f5fefe;
 }
+
 .slide h3:hover {
     color: #ffd5d5;
     border-bottom: 2px solid #f3caca99;
 }
+
 .slide_track {
     display: flex;
     gap: 40px 10px;
     overflow-x: scroll;
     overflow-y: hidden;
 }
+
 .slide_track::-webkit-scrollbar {
     display: none;
 }
+
 .container {
     display: flex;
     flex-direction: column;
@@ -150,6 +173,7 @@ nav {
     gap: 4em;
     margin-top: 2em;
 }
+
 .container h1 {
     display: flex;
     justify-content: center;
@@ -160,14 +184,17 @@ nav {
     gap: 10px;
     cursor: pointer;
 }
+
 .container h1:hover {
     border-bottom: 2px solid #80351a;
-} 
+}
+
 .container h2 {
     color: #03346E;
     font-size: 48px;
     cursor: pointer;
 }
+
 .container p {
     cursor: pointer;
     color: #575C74;
@@ -176,33 +203,40 @@ nav {
     line-height: 24px;
     font-family: "League Spartan", sans-serif;
 }
+
 .abtus {
     display: flex;
     margin-bottom: 4em;
 }
+
 .intropara {
     display: flex;
     flex-direction: column;
     margin: 3em;
     gap: 1em;
 }
+
 .abtus img {
     height: 700px;
     border-radius: 6%;
 }
+
 .abouticon {
     display: flex;
     gap: 7em;
     margin-bottom: 4em;
 }
+
 .iconbg {
     gap: 13px;
     display: flex;
     flex-direction: row;
 }
+
 .iconbg img {
     height: 40px;
 }
+
 i#fouricon {
     font-size: 31px;
     color: black;
@@ -210,16 +244,20 @@ i#fouricon {
     border-radius: 44%;
     background-color: #ababab6b;
 }
+
 .chooseus {
     display: flex;
 }
+
 .chooseus img {
     height: 455px;
     border-radius: 6%;
 }
+
 .chooseus h2 {
     color: #03346E;
 }
+
 .log-content i {
     background-color: #100d0dd1;
     border-radius: 50%;
@@ -230,12 +268,15 @@ i#fouricon {
     align-items: center;
     justify-content: center;
 }
-#iconz{
+
+#iconz {
     color: white;
 }
-#iconz:hover{
+
+#iconz:hover {
     color: rgb(183, 179, 179);
 }
+
 .wrapper {
     position: relative;
     display: flex;
@@ -243,6 +284,7 @@ i#fouricon {
     gap: 4em;
     padding: 4em;
 }
+
 .main {
     display: flex;
     flex-direction: column;
@@ -250,9 +292,12 @@ i#fouricon {
     gap: 4em;
     margin: auto;
 }
-.main h1{
-    color: #03346E;;
+
+.main h1 {
+    color: #03346E;
+    ;
 }
+
 .audit {
     display: flex;
     flex-direction: row;
@@ -261,7 +306,8 @@ i#fouricon {
     align-content: center;
     margin: auto;
 }
-.bgdecor{
+
+.bgdecor {
     width: 10%;
     height: 15%;
     background-color: rgb(147, 208, 210);
@@ -271,28 +317,34 @@ i#fouricon {
     border-end-start-radius: 20em;
     border-radius: 10em;
 }
+
 .main h1 {
     text-align: center;
     font-size: 40px;
 }
+
 .log-content h2 {
     color: #575C74;
     font-size: 25px;
     margin-top: 10px;
 }
+
 .shoe img {
     max-width: 100%;
     height: auto;
     border-radius: 50px;
 }
+
 .sample {
     position: relative;
     margin-top: 5em;
 }
+
 .sample img {
     width: 100%;
     height: 300px;
 }
+
 .samplecontent {
     color: white;
     position: absolute;
@@ -304,9 +356,11 @@ i#fouricon {
     flex-direction: column;
     align-items: center;
 }
+
 .samplecontent p {
     font-size: 28px;
 }
+
 .samplecontent button {
     font-size: 15px;
     color: white;
@@ -315,6 +369,7 @@ i#fouricon {
     border: none;
     cursor: pointer;
 }
+
 .whatsapp {
     cursor: pointer;
     position: fixed;
@@ -322,10 +377,12 @@ i#fouricon {
     right: 10px;
     border-radius: 50%;
 }
+
 .whatsapp img {
     width: 45px;
     border-radius: 50%;
 }
+
 .footer {
     display: flex;
     height: 275px;
@@ -337,23 +394,29 @@ i#fouricon {
     padding-bottom: 16em;
     background-color: #324d6624;
 }
-.footer li{
+
+.footer li {
     color: black;
     line-height: 43px;
 }
-.footer li:hover{
+
+.footer li:hover {
     color: #03346E;
 }
-.footer h5{
-    line-height:43px;
-}
-.connect h4{
+
+.footer h5 {
     line-height: 43px;
 }
+
+.connect h4 {
+    line-height: 43px;
+}
+
 .f-contact {
     width: 45%;
     line-height: 2;
 }
+
 .connect {
     line-height: 2;
     display: flex;
@@ -366,23 +429,15 @@ i#fouricon {
 
 /* 360px - 575px */
 @media (min-width:300px) and (max-width: 575px) {
-    /* nav {
-        flex-direction: column;
-        align-items: flex-start;
-    } */
-
     .logo img {
         height: 40px;
     }
 
-    /* .navul.show {
-        display: flex;
-    } */
-    .logo{
+    .logo {
         order: 1;
     }
 
-    .navul{
+    .navul {
         order: 3;
         width: 100%;
         flex-direction: column;
@@ -394,24 +449,29 @@ i#fouricon {
         overflow: hidden;
         padding: 0;
     }
+
     .hamburger-icon {
         border: none;
         background-color: transparent;
         display: block;
     }
+
     .ham-icon {
         display: block;
         order: 2;
     }
+
     i.fa-solid.fa-x {
         display: none;
     }
+
     .hamburger-icon .fa-bars,
     .hamburger-icon .fa-x {
         color: white;
         font-size: 28px;
         cursor: pointer;
     }
+
     .nav:has(input[type="checkbox"]:checked) .navul {
         margin-top: 1rem;
         height: 270px;
@@ -424,90 +484,116 @@ i#fouricon {
     .nav:has(input[type="checkbox"]:checked) .fa-x {
         display: inline-block;
     }
+
     .navright {
         display: none;
         order: 2;
     }
-    .slogan{
+
+    .slogan {
         font-size: 1.5em;
     }
+
     @keyframes text {
         0% {
             color: black;
             margin-bottom: -40%;
         }
+
         30% {
             color: gray;
             letter-spacing: 11px;
             margin-bottom: -40px;
         }
+
         85% {
             letter-spacing: 8px;
             margin-bottom: 40px;
         }
     }
-    .bannertitle .text1{
+
+    .bannertitle .text1 {
         font-size: 13px;
     }
-    .bannertitle .text2{
+
+    .bannertitle .text2 {
         font-size: 10px;
     }
+
     .bannerimg img {
         height: auto;
     }
+
     .bannerimg {
         height: auto;
     }
+
     .videosec h3 {
         font-size: 1.5em;
     }
-    .container{
+
+    .container {
         gap: 1em;
     }
-    .container h1, .container h2, .container p {
+
+    .container h1,
+    .container h2,
+    .container p {
         text-align: center;
         font-size: 28px;
     }
-    .container h2{
+
+    .container h2 {
         font-size: 24px;
     }
-    .container p{
+
+    .container p {
         font-size: 20px;
     }
+
     .abtus {
         flex-direction: column;
         align-items: center;
     }
+
     .intropara {
         margin: 1em;
     }
+
     .abtus img {
         height: 350px;
         border-radius: 50px;
     }
+
     .abouticon {
         flex-direction: column;
         gap: 3em;
     }
+
     .log-content h2 {
         font-size: 21px;
     }
+
     .wrapper {
         flex-direction: column;
         padding: 2em;
     }
-    .shoe img{
-            max-width: 100%;
-            height: 27em;
-            border-radius: 50px;
+
+    .shoe img {
+        max-width: 100%;
+        height: 27em;
+        border-radius: 50px;
     }
+
     .sample img {
         height: 8em;
     }
-    .samplecontent p{
+
+    .samplecontent p {
         font-size: 13px;
         text-align: center;
     }
+
     .samplecontent button {
         font-size: 10px;
         padding: 10px;
@@ -522,7 +608,8 @@ i#fouricon {
         padding-top: 2em;
         padding-bottom: 1em;
     }
-    .footer li{
+
+    .footer li {
         line-height: 32px;
     }
 
@@ -533,6 +620,7 @@ i#fouricon {
         width: 100%;
         text-align: center;
     }
+
     .footer .f-contact p {
         text-align: center;
         width: 98%;
@@ -541,92 +629,93 @@ i#fouricon {
 
 /* 576px - 768px */
 @media (min-width: 576px) and (max-width: 768px) {
-    /* nav {
-        flex-direction: column;
-        align-items: flex-start;
-    } */
     .logo img {
         height: 40px;
     }
-    /* .navul {
-        flex-direction: column;
-        gap: 0.5rem;
-        display: none;
-    } */
-    /* .navul.show {
-        display: flex;
-    } */
-    /* .hamburger-icon {
-        display: block;
-    } */
-    /* .navright {
-        display: none;
-    } */
+
     .bannerimg img {
         height: auto;
     }
+
     .bannerimg {
         height: auto;
     }
+
     @keyframes text {
         0% {
             color: black;
             margin-bottom: -40%;
         }
+
         30% {
             color: rgb(86, 82, 82);
             letter-spacing: 14px;
             margin-bottom: -40px;
         }
+
         85% {
             letter-spacing: 4px;
             margin-bottom: 40px;
             font-size: 24px;
         }
     }
-      .bannertitle .text1{
+
+    .bannertitle .text1 {
         font-size: 32px;
         letter-spacing: 4px;
-     } 
+    }
+
     .videosec h3 {
         font-size: 1.5em;
     }
-    .container h1, .container h2, .container p {
+
+    .container h1,
+    .container h2,
+    .container p {
         text-align: center;
     }
-    .container p{
+
+    .container p {
         font-size: 29px;
         line-height: 1em;
     }
+
     .abtus {
         flex-direction: column;
         align-items: center;
     }
+
     .intropara {
         margin: 1em;
     }
+
     .abtus img {
         height: 36em;
         width: 60%;
-        
+
     }
+
     .abouticon {
         flex-direction: column;
         gap: 1em;
     }
+
     .wrapper {
         flex-direction: column;
         padding: 1em;
     }
+
     .sample img {
         height: 190px;
-        
+
     }
-    .shoe img{
+
+    .shoe img {
         display: flex;
         margin: auto;
     }
-    .samplecontent p{
+
+    .samplecontent p {
         font-size: 20px;
         text-align: center;
     }
@@ -660,81 +749,105 @@ i#fouricon {
     .nav {
         gap: 1em;
     }
+
     .logo img {
         height: 45px;
     }
+
     .navul {
         gap: 0.75rem;
     }
+
     .navright img {
         height: 20px;
     }
+
     .slogan {
         font-size: 1.5em;
     }
+
     .bannerimg img {
         height: auto;
     }
+
     .bannerimg {
         height: auto;
     }
-     @keyframes text {
+
+    @keyframes text {
         0% {
             color: black;
             margin-bottom: -40%;
         }
+
         30% {
             color: rgb(86, 82, 82);
             letter-spacing: 14px;
             margin-bottom: -40px;
         }
+
         85% {
             letter-spacing: 4px;
             margin-bottom: 40px;
             font-size: 24px;
-        } 
-    } 
-    .bannertitle .text1{
+        }
+    }
+
+    .bannertitle .text1 {
         font-size: 42px;
     }
+
     .videosec h3 {
         font-size: 2em;
     }
-    .container h1, .container h2, .container p {
+
+    .container h1,
+    .container h2,
+    .container p {
         text-align: center;
     }
-    .container p{
+
+    .container p {
         font-size: 1.7em;
         line-height: 31px;
     }
+
     .abtus {
         flex-direction: column;
         align-items: center;
     }
+
     .intropara {
         margin: 2em;
     }
+
     .abtus img {
         height: 470px;
     }
+
     .abouticon {
         flex-direction: column;
         gap: 2em;
     }
+
     .wrapper {
         flex-direction: column;
         padding: 2em;
     }
-    .shoe img{
+
+    .shoe img {
         display: flex;
         margin: auto;
     }
-    .log-content h2{
+
+    .log-content h2 {
         font-size: 28px;
     }
+
     .sample img {
         height: 15em;
     }
+
     .samplecontent p {
         font-size: 22px;
         text-align: center;
@@ -756,13 +869,16 @@ i#fouricon {
         text-align: center;
         margin-bottom: 1em;
     }
-.links{
-    width: 116px;
-}
+
+    .links {
+        width: 116px;
+    }
+
     .footer .f-contact p {
         text-align: center;
     }
-    .socialmedia{
+
+    .socialmedia {
         display: flex;
         flex-direction: column;
     }
@@ -773,69 +889,94 @@ i#fouricon {
     .logo img {
         height: 50px;
     }
+
     .navul {
         gap: 1rem;
     }
+
     .navright img {
         height: 25px;
     }
+
     .slogan {
         font-size: 2em;
     }
+
     .bannerimg img {
         height: auto;
     }
+
     .bannerimg {
         height: auto;
     }
+
     .videosec h3 {
         font-size: 2.5em;
     }
-    .container{
+
+    .container {
         padding: 2em;
     }
-    .container h1, .container h2, .container p {
+
+    .container h1,
+    .container h2,
+    .container p {
         text-align: center;
     }
-    .container h2{
+
+    .container h2 {
         font-size: 4em;
     }
-    .container p{
+
+    .container p {
         font-size: 2em;
         line-height: 1.2em;
     }
+
     .abtus {
         flex-direction: column;
         align-items: center;
     }
+
     .intropara {
         margin: 3em;
     }
+
     .abtus img {
         height: 700px;
         border-radius: 12%;
     }
+
     .abouticon {
         flex-direction: column;
         gap: 2em;
     }
+
     .wrapper {
         padding: 3em;
     }
-    .audit{
+
+    .audit {
         gap: 9em;
     }
+
     .sample img {
         height: auto;
     }
+
     .footer {
         flex-direction: column;
         align-items: center;
     }
-    .footer .f-contact, .footer .links, .footer .mid-links, .footer .connect {
+
+    .footer .f-contact,
+    .footer .links,
+    .footer .mid-links,
+    .footer .connect {
         width: 100%;
         text-align: center;
     }
+
     .footer {
         flex-direction: row;
         justify-content: space-between;
@@ -856,7 +997,3 @@ i#fouricon {
         text-align: center;
     }
 }
-
-
-
-
