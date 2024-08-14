@@ -1,4 +1,25 @@
-* {
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shine Shoe Exports</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Varela&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=League+Spartan:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Style+Script&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -60,51 +81,6 @@ nav {
     display: flex;
     gap: 1em;
 }
-
-.slogan {
-    color: #03346E;
-    font-family: "Style Script", cursive;
-    font-size: 2em;
-    display: flex;
-    justify-content: center;
-}
-
-.bannerimg {
-    position: relative;
-}
-
-.bannerimg img {
-    width: 100%;
-}
-
-.bannertitle {
-    width: 100%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    color: white;
-    text-align: center;
-    transform: translate(-50%, -50%);
-}
-
-.bannertitle span {
-    text-transform: uppercase;
-    display: block;
-}
-
-.text1 {
-    font-size: 60px;
-    font-weight: 700;
-    letter-spacing: 8px;
-    position: relative;
-    animation: text 3s 1;
-}
-
-.text2 {
-    font-size: 20px;
-    color: white;
-}
-
 @keyframes text {
     0% {
         color: black;
@@ -121,7 +97,24 @@ nav {
         margin-bottom: 40px;
     }
 }
+.gallery {
+        text-align: center;
+        background-color: #575555c4;
+        color: white;
+        padding: 50px 20px;
+    }
 
+    .gallery h2 {
+        margin-bottom: 10px;
+        font-size: 36px;
+    }
+
+    .gallery p {
+        font-size: 16px;
+    }
+    .gallery p a{
+        color: white;
+    }
 .videosec h3 {
     display: flex;
     justify-content: center;
@@ -168,211 +161,6 @@ nav {
 .code{
     float: right;
 }
-
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 4em;
-    margin-top: 2em;
-}
-
-.container h1 {
-    display: flex;
-    justify-content: center;
-    color: #884A33;
-    margin: 10px;
-    font-size: 45px;
-    font-family: "Rubik", sans-serif;
-    gap: 10px;
-    cursor: pointer;
-}
-
-.container h1:hover {
-    border-bottom: 2px solid #80351a;
-}
-
-.container h2 {
-    color: #03346E;
-    font-size: 48px;
-    cursor: pointer;
-}
-
-.container p {
-    cursor: pointer;
-    color: #575C74;
-    font-size: 20px;
-    text-align: justify;
-    line-height: 24px;
-    font-family: "League Spartan", sans-serif;
-}
-
-.abtus {
-    display: flex;
-    margin-bottom: 4em;
-}
-
-.intropara {
-    display: flex;
-    flex-direction: column;
-    margin: 3em;
-    gap: 1em;
-}
-
-.abtus img {
-    height: 700px;
-    border-radius: 6%;
-}
-
-.abouticon {
-    display: flex;
-    gap: 7em;
-    margin-bottom: 4em;
-}
-
-.iconbg {
-    gap: 13px;
-    display: flex;
-    flex-direction: row;
-}
-
-.iconbg img {
-    height: 40px;
-}
-
-i#fouricon {
-    font-size: 31px;
-    color: black;
-    padding: 10px;
-    border-radius: 44%;
-    background-color: #ababab6b;
-}
-
-.chooseus {
-    display: flex;
-}
-
-.chooseus img {
-    height: 455px;
-    border-radius: 6%;
-}
-
-.chooseus h2 {
-    color: #03346E;
-}
-
-.log-content i {
-    background-color: #100d0dd1;
-    border-radius: 50%;
-    font-size: 25px;
-    width: 50px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#iconz {
-    color: white;
-}
-
-#iconz:hover {
-    color: rgb(183, 179, 179);
-}
-
-.wrapper {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    gap: 4em;
-    padding: 4em;
-}
-
-.main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 4em;
-    margin: auto;
-}
-
-.main h1 {
-    color: #03346E;
-    ;
-}
-
-.audit {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 5em;
-    align-content: center;
-    margin: auto;
-}
-
-.bgdecor {
-    width: 10%;
-    height: 15%;
-    background-color: rgb(147, 208, 210);
-    position: absolute;
-    top: 0;
-    right: 0;
-    border-end-start-radius: 20em;
-    border-radius: 10em;
-}
-
-.main h1 {
-    text-align: center;
-    font-size: 40px;
-}
-
-.log-content h2 {
-    color: #575C74;
-    font-size: 25px;
-    margin-top: 10px;
-}
-
-.shoe img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 50px;
-}
-
-.sample {
-    position: relative;
-    margin-top: 5em;
-}
-
-.sample img {
-    width: 100%;
-    height: 300px;
-}
-
-.samplecontent {
-    color: white;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    gap: 8px;
-    flex-direction: column;
-    align-items: center;
-}
-
-.samplecontent p {
-    font-size: 28px;
-}
-
-.samplecontent button {
-    font-size: 15px;
-    color: white;
-    padding: 13px;
-    background-color: #03346E;
-    border: none;
-    cursor: pointer;
-}
-
 .whatsapp {
     cursor: pointer;
     position: fixed;
@@ -426,8 +214,6 @@ i#fouricon {
     flex-direction: column;
     align-items: center;
 }
-
-
 /* Media Queries */
 
 /* 360px - 575px */
@@ -534,74 +320,6 @@ i#fouricon {
     .videosec h3 {
         font-size: 1.5em;
     }
-
-    .container {
-        gap: 1em;
-    }
-
-    .container h1,
-    .container h2,
-    .container p {
-        text-align: center;
-        font-size: 28px;
-    }
-
-    .container h2 {
-        font-size: 24px;
-    }
-
-    .container p {
-        font-size: 20px;
-    }
-
-    .abtus {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .intropara {
-        margin: 1em;
-    }
-
-    .abtus img {
-        height: 350px;
-        border-radius: 50px;
-    }
-
-    .abouticon {
-        flex-direction: column;
-        gap: 3em;
-    }
-
-    .log-content h2 {
-        font-size: 21px;
-    }
-
-    .wrapper {
-        flex-direction: column;
-        padding: 2em;
-    }
-
-    .shoe img {
-        max-width: 100%;
-        height: 27em;
-        border-radius: 50px;
-    }
-
-    .sample img {
-        height: 8em;
-    }
-
-    .samplecontent p {
-        font-size: 13px;
-        text-align: center;
-    }
-
-    .samplecontent button {
-        font-size: 10px;
-        padding: 10px;
-    }
-
     .footer {
         flex-direction: column;
         align-items: center;
@@ -671,59 +389,6 @@ i#fouricon {
     .videosec h3 {
         font-size: 1.5em;
     }
-
-    .container h1,
-    .container h2,
-    .container p {
-        text-align: center;
-    }
-
-    .container p {
-        font-size: 29px;
-        line-height: 1em;
-    }
-
-    .abtus {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .intropara {
-        margin: 1em;
-    }
-
-    .abtus img {
-        height: 36em;
-        width: 60%;
-
-    }
-
-    .abouticon {
-        flex-direction: column;
-        gap: 1em;
-    }
-
-    .wrapper {
-        flex-direction: column;
-        padding: 1em;
-    }
-
-    .sample img {
-        height: 190px;
-
-    }
-
-    .shoe img {
-        display: flex;
-        margin: auto;
-    }
-
-    .samplecontent p {
-        font-size: 20px;
-        text-align: center;
-    }
-
-
     .footer {
         flex-direction: column;
         align-items: center;
@@ -803,60 +468,6 @@ i#fouricon {
     .videosec h3 {
         font-size: 2em;
     }
-
-    .container h1,
-    .container h2,
-    .container p {
-        text-align: center;
-    }
-
-    .container p {
-        font-size: 1.7em;
-        line-height: 31px;
-    }
-
-    .abtus {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .intropara {
-        margin: 2em;
-    }
-
-    .abtus img {
-        height: 470px;
-    }
-
-    .abouticon {
-        flex-direction: column;
-        gap: 2em;
-    }
-
-    .wrapper {
-        flex-direction: column;
-        padding: 2em;
-    }
-
-    .shoe img {
-        display: flex;
-        margin: auto;
-    }
-
-    .log-content h2 {
-        font-size: 28px;
-    }
-
-    .sample img {
-        height: 15em;
-    }
-
-    .samplecontent p {
-        font-size: 22px;
-        text-align: center;
-    }
-
-
     .footer {
         flex-direction: row;
         justify-content: space-around;
@@ -886,7 +497,6 @@ i#fouricon {
         flex-direction: column;
     }
 }
-
 /* 992px - 1200px */
 @media (min-width: 992px) and (max-width: 1200px) {
     .logo img {
@@ -920,53 +530,6 @@ i#fouricon {
     .container {
         padding: 2em;
     }
-
-    .container h1,
-    .container h2,
-    .container p {
-        text-align: center;
-    }
-
-    .container h2 {
-        font-size: 4em;
-    }
-
-    .container p {
-        font-size: 2em;
-        line-height: 1.2em;
-    }
-
-    .abtus {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .intropara {
-        margin: 3em;
-    }
-
-    .abtus img {
-        height: 700px;
-        border-radius: 12%;
-    }
-
-    .abouticon {
-        flex-direction: column;
-        gap: 2em;
-    }
-
-    .wrapper {
-        padding: 3em;
-    }
-
-    .audit {
-        gap: 9em;
-    }
-
-    .sample img {
-        height: auto;
-    }
-
     .footer {
         flex-direction: column;
         align-items: center;
@@ -1000,3 +563,136 @@ i#fouricon {
         text-align: center;
     }
 }
+
+</style>
+<body>
+    <nav>
+        <div class="logo">
+            <a href="index.html"> <img src="logo1.png" alt=""> </a>
+        </div>
+        <div class="nav">
+            <ul class="navul">
+                <a href="index.html">
+                    <li>Home</li>
+                </a>
+                <a href="about.html">
+                    <li>About Us</li>
+                </a>
+                <a href="gallery.html">
+                    <li>Gallery</li>
+                </a>
+                <a href="contact.html">
+                    <li>Contact Us</li>
+                </a>
+            </ul>
+            <button class="hamburger-icon">
+                <label for="dropdown">
+                    <i class="fa-solid fa-bars"></i>
+                    <i class="fa-solid fa-x"></i>
+                </label>
+                <input type="checkbox" id="dropdown">
+            </button>
+        </div>
+        <div class="navright">
+            <img src="search (1).png" alt="">
+            <img src="user (1).png" alt="">
+        </div>
+    </nav>
+    <section class="gallery">
+        <h2>GALLERY</h2>
+        <p> <a href="index.html">Home </a>/ Gallery</p>
+    </section>
+
+    <div class="videosec">
+        <h3>Best Sellers</h3>
+        <video src="https://cdn.shopify.com/videos/c/o/v/a30bb3562b4b436cbd86d27b66ca5cab.mp4" loop="" autoplay=""
+            muted="" playsinline="" preload="auto" style="width:100%;height:auto;"></video>
+    </div>
+    <section class="slider">
+        <div class="slide_track">
+            <div class="slide">
+                <h3>Top Grain Genuine Leather</h3>
+                <img src="topgrain.jpg" alt="">
+            </div>
+            <div class="slide">
+                <h3>Buttery Soft Nappa Calfskin</h3>
+                <img src="nappacalfskin2.jpg" alt="">
+            </div>
+            <div class="slide">
+                <h3>White Patent Crocodile Print</h3>
+                <img src="crocoprint.jpg" alt="">
+            </div>
+            <div class="slide">
+                <h3>Finished Full Grain Leather</h3>
+                <img src="https://img1.exportersindia.com/product_images/bc-full/2020/10/6939230/full-grain-leather-1603265086-5614481.jpeg"
+                    alt="">
+            </div>
+            <div class="slide">
+                <h3>Mirror Patent Brown Nappa</h3>
+                <img src="mirrorpatentbrown.jpg" alt="">
+            </div>
+            <div class="slide">
+                <h3>Milled Waterproof Soft Nubuck</h3>
+                <img src="nubuck.jpg" alt="">
+            </div>
+            <div class="slide">
+                <h3>Cow Embossed Modern PU</h3>
+                <img src="modernpu.jpg" alt="">
+            </div>
+        </div>
+        <div>
+        <img class="code" src="bx-code.svg" alt=""></div>
+    </section>
+
+     <!-- <footer> -->
+        <div class="footer">
+            <div class="whatsapp">
+                <a href="https://api.whatsapp.com/send?phone=919790242880&amp;text=Hi">
+                    <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/whtsapp.png?v=1709276301">
+                </a>
+            </div>
+            <div class="links">
+                <ul>
+                    <h4>USEFUL LINKS</h4>
+                    <a href="index.html">
+                        <li>HOME</li>
+                    </a>
+                    <a href="about.html">
+                        <li>ABOUT US</li>
+                    </a>
+                    <a href="gallery.html">
+                        <li>GALLERY</li>
+                    </a>
+                    <a href="contact.html">
+                        <li>CONTACT US</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="mid-links">
+                <ul>
+                    <br>
+                    <li>PRIVACY POLICY</li>
+                    <li>PRODUCTS</li>
+                    <li>CATEGORIES</li>
+                    <li>TESTIMONIALS</li>
+                </ul>
+            </div>
+            <div class="f-contact">
+                <h4>CONTACT</h4>
+                <p>RP25+35F, Kandrampalli Road, Opposite to Perfect Shoe Fabric, Thutipet, Ambur, Tamil Nadu 635802</p>
+                <h5 class="phoneno">+91-9790242880</h5>
+                <h5 class="justdial">shineshoes@justdial.com</h5>
+            </div>
+            <div class="connect">
+                <h4>CONNECT</h4>
+                <div class="socialmedia">
+                    <a href="https://facebook.com"><img class="connectslot" src="facebook.png" alt=""></a>
+                    <a href="https://linkedin.com"><img class="connectslot" src="linkedin.png" alt=""></a>
+                    <a href="https://youtube.com"><img class="connectslot" src="youtube.png" alt=""></a>
+                    <a href="https://instagram.com"><img class="connectslot" src="instagram.png" alt=""></a>
+                    <a href="https://twitter.com"><img class="connectslot" src="twitter.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+</body>
+</html>
