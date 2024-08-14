@@ -366,26 +366,67 @@ i#fouricon {
 
 /* 360px - 575px */
 @media (min-width:300px) and (max-width: 575px) {
-    nav {
+    /* nav {
         flex-direction: column;
         align-items: flex-start;
-    }
+    } */
+
     .logo img {
         height: 40px;
     }
-    .navul {
-        flex-direction: column;
-        gap: 0.5rem;
-        display: none;
-    }
-    .navul.show {
+
+    /* .navul.show {
         display: flex;
+    } */
+    .logo{
+        order: 1;
+    }
+
+    .navul{
+        order: 3;
+        width: 100%;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0.7rem;
+        height: 0;
+        overflow: hidden;
+        padding: 0;
     }
     .hamburger-icon {
+        border: none;
+        background-color: transparent;
         display: block;
+    }
+    .ham-icon {
+        display: block;
+        order: 2;
+    }
+    i.fa-solid.fa-x {
+        display: none;
+    }
+    .hamburger-icon .fa-bars,
+    .hamburger-icon .fa-x {
+        color: white;
+        font-size: 28px;
+        cursor: pointer;
+    }
+    .nav:has(input[type="checkbox"]:checked) .navul {
+        margin-top: 1rem;
+        height: 270px;
+    }
+
+    .nav:has(input[type="checkbox"]:checked) .fa-bars {
+        display: none;
+    }
+
+    .nav:has(input[type="checkbox"]:checked) .fa-x {
+        display: inline-block;
     }
     .navright {
         display: none;
+        order: 2;
     }
     .slogan{
         font-size: 1.5em;
@@ -500,27 +541,27 @@ i#fouricon {
 
 /* 576px - 768px */
 @media (min-width: 576px) and (max-width: 768px) {
-    nav {
+    /* nav {
         flex-direction: column;
         align-items: flex-start;
-    }
+    } */
     .logo img {
         height: 40px;
     }
-    .navul {
+    /* .navul {
         flex-direction: column;
         gap: 0.5rem;
         display: none;
-    }
-    .navul.show {
+    } */
+    /* .navul.show {
         display: flex;
-    }
-    .hamburger-icon {
+    } */
+    /* .hamburger-icon {
         display: block;
-    }
-    .navright {
+    } */
+    /* .navright {
         display: none;
-    }
+    } */
     .bannerimg img {
         height: auto;
     }

@@ -258,15 +258,80 @@
 /* Media Queries */
 /* Small Devices (360px - 575px) */
 @media (min-width:300px) and (max-width: 575px) {
-    nav {
+ /* nav {
         flex-direction: column;
-        gap: 1em;
+        align-items: flex-start;
+    } */
+
+    .logo img {
+        height: 40px;
     }
 
+    /* .navul.show {
+        display: flex;
+    } */
+    .logo{
+        order: 1;
+    }
+
+    .navul{
+        order: 3;
+        width: 100%;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0.7rem;
+        height: 0;
+        overflow: hidden;
+        padding: 0;
+    }
+    .hamburger-icon {
+        border: none;
+        background-color: transparent;
+        display: block;
+    }
+    .ham-icon {
+        display: block;
+        order: 2;
+    }
+    i.fa-solid.fa-x {
+        display: none;
+    }
+    .hamburger-icon .fa-bars,
+    .hamburger-icon .fa-x {
+        color: white;
+        font-size: 28px;
+        cursor: pointer;
+    }
+    .nav:has(input[type="checkbox"]:checked) .navul {
+        margin-top: 1rem;
+        height: 270px;
+    }
+
+    .nav:has(input[type="checkbox"]:checked) .fa-bars {
+        display: none;
+    }
+
+    .nav:has(input[type="checkbox"]:checked) .fa-x {
+        display: inline-block;
+    }
+    .navright {
+        display: none;
+        order: 2;
+    }
+
+
+
+    /* nav {
+        flex-direction: column;
+        gap: 1em;
+    } */
+/* 
     .navul {
         display: none;
         gap: 0.5em;
-    }
+    } */
 
     .features {
         flex-direction: column;
@@ -545,13 +610,6 @@
         <div class="logo">
         <a href="index.html"><img src="logo1.png" alt=""></a>
         </div>
-        <button class="hamburger-icon">
-            <label for="dropdown">
-                <i class="fa-solid fa-bars"></i>
-                <i class="fa-solid fa-x"></i>
-            </label>
-            <input type="checkbox" id="dropdown">
-        </button>
         <div class="nav">
             <ul class="navul">
                 <a href="index.html">
@@ -567,6 +625,14 @@
                     <li>Contact Us</li>
                 </a>
             </ul>
+            <button class="hamburger-icon">
+                <label for="dropdown">
+                    <i class="fa-solid fa-bars"></i>
+                    <i class="fa-solid fa-x"></i>
+                </label>
+                <input type="checkbox" id="dropdown">
+            </button>
+        </div>
         </div>
         <div class="navright">
             <img src="search (1).png" alt="">
