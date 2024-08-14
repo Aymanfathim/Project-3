@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Varela&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=League+Spartan:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Style+Script&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+        list-style: none;
+    }
+
+    body {
+        background-color: #e1e1e1;
+        font-family: "Poppins", sans-serif;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2em;
+        padding: 22px;
+        color: white;
+        background-color: #021526;
+    }
+
+    .logo img {
+        height: 50px;
+    }
+
+    .hamburger-icon {
+        border: none;
+        background-color: transparent;
+        display: none;
+    }
+
+    .hamburger-icon .fa-bars,
+    .hamburger-icon .fa-x {
+        color: white;
+        font-size: 1rem;
+        cursor: pointer;
+    }
+
+    .hamburger-icon input[type="checkbox"] {
+        appearance: none;
+    }
+
+    .navul {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .navul li {
+        color: white;
+        font-size: 20px;
+    }
+
+    .navul li:hover {
+        color: #3e90f5;
+    }
+
+    .navright {
+        display: flex;
+        gap: 1em;
+    }
+
+    .about-us {
+        text-align: center;
+        background-color: #575555c4;
+        color: white;
+        padding: 50px 20px;
+    }
+
+    .about-us h2 {
+        margin-bottom: 10px;
+        font-size: 36px;
+    }
+
+    .about-us p {
+        font-size: 16px;
+    }
+
+    .features {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 20px;
+        background-color: white;
+    }
+
+    .feature {
+        text-align: center;
+    }
+
+    .feature .img {
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+
+    .feature p {
+        font-size: 16px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 4em;
+        margin-top: 2em;
+    }
+
+    .container h1 {
+        display: flex;
+        justify-content: center;
+        color: #884A33;
+        margin: 10px;
+        font-size: 45px;
+        font-family: "Rubik", sans-serif;
+        gap: 10px;
+    }
+
+    .container h1:hover {
+        border-bottom: 2px solid #80351a;
+    }
+
+    .container h2 {
+        color: #03346E;
+        font-size: 48px;
+    }
+
+    .container p {
+        color: #575C74;
+        font-size: 20px;
+        text-align: justify;
+        line-height: 24px;
+        font-family: "League Spartan", sans-serif;
+    }
+
+    .abtus {
+        display: flex;
+        margin-bottom: 4em;
+    }
+
+    .intropara {
+        display: flex;
+        flex-direction: column;
+        margin: 3em;
+        gap: 1em;
+    }
+
+    .abtus img {
+        height: 700px;
+        border-radius: 6%;
+    }
+
+
+    .abouticon {
+        display: flex;
+        justify-content: center;
+        gap: 5em;
+        margin-bottom: 4em;
+        margin-right: 4em;
+    }
+
+    .iconbg {
+        gap: 13px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .iconbg img {
+        height: 40px;
+    }
+
+    i#fouricon {
+        font-size: 31px;
+        color: black;
+        padding: 10px;
+        border-radius: 44%;
+        background-color: #ababab6b;
+    }
+
+    .whatsapp {
+        cursor: pointer;
+        position: fixed;
+        bottom: 5px;
+        right: 10px;
+        border-radius: 50%;
+    }
+
+    .whatsapp img {
+        width: 45px;
+        border-radius: 50%;
+    }
+
+    .footer {
+        display: flex;
+        height: 275px;
+        justify-content: center;
+        gap: 3em;
+        margin: auto;
+        padding: 10px;
+        padding-top: 3em;
+        padding-bottom: 16em;
+        background-color: #324d6624
+    }
+
+    .footer li {
+        color: black;
+        line-height: 43px;
+    }
+
+    .footer li:hover {
+        color: #03346E;
+    }
+
+    .footer h5 {
+        line-height: 43px;
+    }
+
+    .connect h4 {
+        line-height: 43px;
+    }
+
+    .f-contact {
+        width: 45%;
+        line-height: 2;
+    }
+
+    .connect {
+        line-height: 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+/* Media Queries */
+/* Small Devices (360px - 575px) */
+@media (min-width:300px) and (max-width: 575px) {
+    nav {
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    .navul {
+        display: none;
+        gap: 0.5em;
+    }
+
+    .features {
+        flex-direction: column;
+        gap: 2em;
+    }
+    .container h2 {
+    color: #03346E;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 1em;
+}
+.container p{
+    font-size: 22px;
+    line-height: 24px;
+}
+
+    .abtus {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .abtus img {
+        width: 100%;
+        height: auto;
+    }
+
+    .intropara {
+        margin: 1em;
+    }
+
+    .abouticon {
+        flex-direction: column;
+        align-items: center;
+        gap: 2em;
+        margin-left: 3em;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 2em;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 0;
+        gap: 1em;
+        padding-top: 2em;
+        padding-bottom: 1em;
+    }
+    .footer li{
+        line-height: 32px;
+    }
+
+    .footer .links,
+    .footer .mid-links,
+    .footer .f-contact,
+    .footer .connect {
+        width: 100%;
+        text-align: center;
+    }
+    .footer .f-contact p {
+        text-align: center;
+        width: 98%;
+    }
+}
+
+/* Medium Devices (576px - 768px) */
+@media (min-width: 576px) and (max-width: 768px) {
+    .abtus {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .abtus img {
+        width: 100%;
+        height: auto;
+    }
+    .icon img{
+        height: 5em;
+    }
+    .features{
+        padding: 3em 20px;
+    }
+    .feature p{
+        font-size: 22px;
+    }
+    .container h2{
+        margin-top: 1em;
+        font-size: 49px;
+        text-align: center;
+    }
+    .container p{
+        font-size:28px;
+        line-height: 31px;
+    }
+    .intropara {
+        margin: 1em;
+    }
+
+    .abouticon {
+        flex-direction: column;
+        align-items: center;
+        gap: 2em;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding-bottom: 2em;
+        gap: 0;
+        gap: 1em;
+    }
+
+    .footer .links,
+    .footer .mid-links,
+    .footer .f-contact,
+    .footer .connect {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 1em;
+    }
+
+    .footer .f-contact p {
+        text-align: center;
+        padding: 0em 4em;
+    }
+}
+
+/* Large Devices (769px - 991px) */
+@media (min-width: 769px) and (max-width: 991px) {
+    .abtus img {
+        width: 25em;
+        height: 524px;
+        display: flex;
+        margin: auto;
+    }
+    .container{
+        gap: 3em;
+    }
+    .container h2{
+        text-align: center;
+    }
+    .container p{
+        font-size: 1.7em;
+        line-height: 1em;
+    }
+    .abtus {
+    display: flex;
+    margin-bottom: 4em;
+    flex-direction: column;
+}
+    .intropara {
+        margin: 1em;
+    }
+
+    .abouticon {
+        flex-direction: column;
+        align-items: center;
+        gap: 3em;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 2em;
+    }
+
+    .footer {
+        flex-direction: row;
+        justify-content: space-around;
+        height: auto;
+        padding-bottom: 2em;
+        align-items: center;
+    }
+
+    .footer .links,
+    .footer .mid-links,
+    .footer .f-contact,
+    .footer .connect {
+        text-align: center;
+        margin-bottom: 1em;
+    }
+.links{
+    width: 116px;
+}
+    .footer .f-contact p {
+        text-align: center;
+    }
+    .socialmedia{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* Extra Large Devices (992px - 1200px) */
+@media (min-width: 992px) and (max-width: 1200px) {
+    nav {
+        flex-direction: row;
+        gap: 1em;
+    }
+
+    .navul {
+        flex-direction: row;
+        gap: 1em;
+    }
+
+    .features {
+        flex-direction: row;
+        gap: 1em;
+    }
+
+    .abtus {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .abtus img {
+        width: 500px;
+        height: auto;
+    }
+
+    .intropara {
+        margin: 1em;
+    }
+
+    .abouticon {
+        flex-direction: row;
+        align-items: center;
+        gap: 1em;
+    }
+
+    .footer {
+        flex-direction: row;
+        align-items: center;
+        gap: 1em;
+    }
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer .f-contact, .footer .links, .footer .mid-links, .footer .connect {
+        width: 100%;
+        text-align: center;
+    }
+
+
+    .footer {
+        flex-direction: row;
+        justify-content: space-between;
+        height: auto;
+        padding-bottom: 2em;
+    }
+
+    .footer .links,
+    .footer .mid-links,
+    .footer .f-contact,
+    .footer .connect {
+        width: 45%;
+        text-align: center;
+        margin-bottom: 1em;
+    }
+
+    .footer .f-contact p {
+        text-align: center;
+    }
+}
+
+</style>
+
+<body>
+    <nav>
+        <div class="logo">
+        <a href="index.html"><img src="logo1.png" alt=""></a>
+        </div>
+        <button class="hamburger-icon">
+            <label for="dropdown">
+                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-x"></i>
+            </label>
+            <input type="checkbox" id="dropdown">
+        </button>
+        <div class="nav">
+            <ul class="navul">
+                <a href="index.html">
+                    <li>Home</li>
+                </a>
+                <a href="about.html">
+                    <li>About Us</li>
+                </a>
+                <a href="gallery.html">
+                    <li>Gallery</li>
+                </a>
+                <a href="contact.html">
+                    <li>Contact Us</li>
+                </a>
+            </ul>
+        </div>
+        <div class="navright">
+            <img src="search (1).png" alt="">
+            <img src="user (1).png" alt="">
+        </div>
+    </nav>
+
+    <section class="about-us">
+        <h2>ABOUT US</h2>
+        <p>Home / About Us</p>
+    </section>
+    <section class="features">
+        <div class="feature">
+            <div class="icon">
+                <img src="water.png" alt="">
+            </div>
+            <p>Water Proof</p>
+        </div>
+        <div class="feature">
+            <div class="icon">
+                <img src="recycle.png" alt="">
+            </div>
+            <p>Synthetic Fabric</p>
+        </div>
+        <div class="feature">
+            <div class="icon">
+                <img src="acrylic.png" alt="">
+            </div>
+            <p>Acrylic</p>
+        </div>
+        <div class="feature">
+            <div class="icon">
+                <img src="friendly.png" alt="">
+            </div>
+            <p>Eco-Friendly</p>
+        </div>
+    </section>
+    <!-- ABOUT US SECTION -->
+    <div class="container">
+        <h1>About Us</h1>
+        <div class="abtus">
+            <img src="clock.webp" alt="">
+            <div class="intropara">
+                <h2>India's Leading Manufacturer And Exporter Of Finished Leathers</h2>
+                <br>
+                <p>&nbsp;&nbsp;Welcome to Shine Shoe Exports, a trusted name in the leather manufacturing industry since
+                    1985.
+                    With nearly four decades of experience, we pride ourselves on delivering premium quality leather
+                    products to some of the most renowned brands across the globe.Our commitment to excellence and
+                    innovation has positioned us as a leader in the market, known for our impeccable craftsmanship,
+                    sustainable practices, and customer-centric approach. Join us in exploring our legacy of quality
+                    and the timeless appeal of our leather creations.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="abouticon">
+        <div class="iconbg">
+            <i class="fa-solid fa-hand-holding-dollar" id="fouricon"></i>
+            <div class="icontitle">
+                <p>Nature of Business</p>
+                <span>Manufacturer</span>
+            </div>
+        </div>
+        <div class="iconbg">
+            <i class="fa fa-building-o" aria-hidden="true" id="fouricon"></i> 
+            <div class="icontitle">
+                <p>Year of Establishment</p>
+                <span>1985</span>
+            </div>
+        </div>
+        <div class="iconbg">
+            <i class="fas fa-balance-scale" id="fouricon"></i>
+            <div class="icontitle">
+                <p>Legal Status of Firm</p>
+                <span>Sole-Propeiter</span>
+            </div>
+        </div>
+        <div class="iconbg">
+            <i class="fa-solid fa-file-contract" id="fouricon"></i>
+            <div class="icontitle">
+                <p>Company's ISIC Code</p>
+                <span>4641, 7020</span>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- <footer> -->
+    <div class="footer">
+        <div class="whatsapp">
+            <a href="https://api.whatsapp.com/send?phone=919790242880&amp;text=Hi">
+                <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/whtsapp.png?v=1709276301">
+            </a>
+        </div>
+        <div class="links">
+            <ul>
+                <h4>USEFUL LINKS</h4>
+                <a href="index.html">
+                    <li>HOME</li>
+                </a>
+               <a href="about.html"> <li>ABOUT US</li></a>
+              <a href=""> <li>GALLERY</li></a>
+               <a href="contact.html"> <li>CONTACT US</li></a>
+            </ul>
+        </div>
+        <div class="mid-links">
+            <ul>
+                <br>
+                <li>PRIVACY POLICY</li>
+                <li>PRODUCTS</li>
+                <li>CATEGORIES</li>
+                <li>TESTIMONIALS</li>
+            </ul>
+        </div>
+        <div class="f-contact">
+            <h4>CONTACT</h4>
+            <p>RP25+35F, Kandrampalli Road, Opposite to Perfect Shoe Fabric, Thutipet, Ambur, Tamil Nadu 635802.</p>
+            <h5 class="phoneno">+91-9790242880</h5>
+            <h5 class="justdial">shineshoes@justdial.com</h5>
+        </div>
+        <div class="connect">
+            <h4>CONNECT</h4>
+            <div class="socialmedia">
+            <a href=""><img src="facebook.png" alt=""></a>
+            <a href=""><img src="linkedin.png" alt=""></a>
+            <a href=""><img src="youtube.png" alt=""></a>
+            <a href=""><img src="instagram.png" alt=""></a>
+            <a href=""><img src="twitter.png" alt=""></a>
+        </div>
+        </div>
+    </div>
+</body>
+
+</html>
