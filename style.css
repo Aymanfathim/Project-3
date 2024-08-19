@@ -288,6 +288,33 @@ i#fouricon {
     color: rgb(183, 179, 179);
 }
 
+.parallax {
+    /* The image used */
+background-image: url(tannery.webp);
+    /* Full height */
+    height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax2 {
+    /* The image used */
+background-image: url(tanning.jpg);
+    /* Full height */
+    height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
 .wrapper {
     position: relative;
     display: flex;
