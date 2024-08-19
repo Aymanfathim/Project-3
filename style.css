@@ -290,9 +290,9 @@ i#fouricon {
 
 .parallax {
     /* The image used */
-background-image: url(tannery.webp);
+    background-image: url(tannery.webp);
     /* Full height */
-    height: 500px; 
+    height: 500px;
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -303,9 +303,9 @@ background-image: url(tannery.webp);
 
 .parallax2 {
     /* The image used */
-background-image: url(tanning.jpg);
+    background-image: url(tanning.jpg);
     /* Full height */
-    height: 500px; 
+    height: 500px;
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -464,6 +464,18 @@ background-image: url(tanning.jpg);
     align-items: center;
 }
 
+.copy {
+    width: 100%;
+    text-align: center;
+    color: #222;
+}
+
+.copy p {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 8px;
+    color: #000;
+}
 
 /* Media Queries */
 
@@ -925,6 +937,10 @@ background-image: url(tanning.jpg);
     .socialmedia {
         display: flex;
         flex-direction: column;
+    }
+
+    .copy p {
+        font-size: 21px;
     }
 }
 

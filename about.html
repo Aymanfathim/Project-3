@@ -157,17 +157,19 @@
     .feature p {
         font-size: 16px;
     }
+
     .parallax {
-    /* The image used */
-background-image: url(abtbanner4.jpeg);
-    /* Full height */
-    height: 500px; 
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+        /* The image used */
+        background-image: url(abtbanner4.jpeg);
+        /* Full height */
+        height: 500px;
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
     .container {
         width: 85%;
         margin: auto;
@@ -295,6 +297,18 @@ background-image: url(abtbanner4.jpeg);
         align-items: center;
     }
 
+    .copy {
+        width: 100%;
+        text-align: center;
+        color: #222;
+    }
+
+    .copy p {
+        font-size: 14px;
+        font-weight: 500;
+        margin-bottom: 8px;
+        color: #000;
+    }
 
     /* Media Queries */
     /* Small Devices (360px - 575px) */
@@ -585,6 +599,10 @@ background-image: url(abtbanner4.jpeg);
             display: flex;
             flex-direction: column;
         }
+
+        .copy p {
+            font-size: 21px;
+        }
     }
 
     /* Extra Large Devices (992px - 1200px) */
@@ -706,7 +724,7 @@ background-image: url(abtbanner4.jpeg);
         <p><a href="index.html"> Home</a> / About Us</p>
     </section>
 
-    
+
 
     <div class="bannerimg"><img src="abtbanner3.jpg" alt="">
         <div class="bannertitle">
@@ -842,6 +860,12 @@ background-image: url(abtbanner4.jpeg);
                 <a href=""><img src="twitter.png" alt=""></a>
             </div>
         </div>
+    </div>
+    <div class="copy">
+        <hr>
+        <p>
+        <p>© All right reserved.designed by Ayman Kaka </p>
+        </p>
     </div>
 </body>
 
