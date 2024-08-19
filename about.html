@@ -88,7 +88,7 @@
         text-align: center;
         background-color: #575555c4;
         color: white;
-        padding: 50px 20px;
+        padding: 40px 20px;
     }
 
     .about-us h2 {
@@ -99,9 +99,15 @@
     .about-us p {
         font-size: 16px;
     }
-    .about-us p a{
+
+    .about-us p a {
         color: white;
     }
+
+    .abtbannerimg {
+        width: 100%;
+    }
+
     .features {
         display: flex;
         justify-content: space-around;
@@ -119,16 +125,42 @@
         margin-bottom: 10px;
     }
 
+    .bannerimg {
+        position: relative;
+    }
+
+    .bannerimg img {
+        width: 100%;
+    }
+
+    .bannertitle {
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        color: #ede6e6;
+        text-align: center;
+        transform: translate(-50%, -50%);
+    }
+
+    .bannertitle span {
+        text-transform: uppercase;
+    }
+
+    .text1 {
+        font-size: 60px;
+        font-weight: 600;
+        letter-spacing: 5px;
+        position: relative;
+    }
+
     .feature p {
         font-size: 16px;
     }
 
     .container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 4em;
-        margin-top: 2em;
+        width: 85%;
+        margin: auto;
     }
 
     .container h1 {
@@ -141,13 +173,9 @@
         gap: 10px;
     }
 
-    .container h1:hover {
-        border-bottom: 2px solid #80351a;
-    }
-
     .container h2 {
         color: #03346E;
-        font-size: 48px;
+        font-size: 43px;
     }
 
     .container p {
@@ -322,6 +350,10 @@
             order: 2;
         }
 
+        .text1 h3 {
+            font-size: 17px;
+        }
+
         .features {
             flex-direction: column;
             gap: 2em;
@@ -410,6 +442,10 @@
             height: 5em;
         }
 
+        .text1 h3 {
+            font-size: 40px;
+        }
+
         .features {
             padding: 3em 20px;
         }
@@ -474,6 +510,10 @@
 
         .container {
             gap: 3em;
+        }
+
+        .text1 h3 {
+            font-size: 40px;
         }
 
         .container h2 {
@@ -655,6 +695,14 @@
         <h2>ABOUT US</h2>
         <p><a href="index.html"> Home</a> / About Us</p>
     </section>
+
+    <div class="bannerimg"><img src="abtbanner3.jpg" alt="">
+        <div class="bannertitle">
+            <span class="text1">
+                <h3>Crafting Timeless Leather Excellence with Passion and Precision.</h3>
+            </span>
+        </div>
+    </div>
     <section class="features">
         <div class="feature">
             <div class="icon">
@@ -709,7 +757,7 @@
             </div>
         </div>
         <div class="iconbg">
-            <i class="fa fa-building-o" aria-hidden="true" id="fouricon"></i> 
+            <i class="fa fa-building-o" aria-hidden="true" id="fouricon"></i>
             <div class="icontitle">
                 <p>Year of Establishment</p>
                 <span>1985</span>
@@ -723,7 +771,7 @@
             </div>
         </div>
         <div class="iconbg">
-            <i class="fa-solid fa-file-contract" id="fouricon"></i> 
+            <i class="fa-solid fa-file-contract" id="fouricon"></i>
             <div class="icontitle">
                 <p>Company's ISIC Code</p>
                 <span>4641, 7020</span>

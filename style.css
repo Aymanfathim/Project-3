@@ -56,6 +56,11 @@ nav {
     color: #3e90f5;
 }
 
+.navul li a:active {
+    color: red;
+    font-weight: bolds;
+}
+
 .navright {
     display: flex;
     gap: 1em;
@@ -137,6 +142,11 @@ nav {
     color: white;
 }
 
+.slider {
+    width: 88%;
+    margin: auto;
+}
+
 .slide img {
     height: 300px;
     width: 300px;
@@ -165,16 +175,14 @@ nav {
 .slide_track::-webkit-scrollbar {
     display: none;
 }
-.code{
+
+.code {
     float: right;
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 4em;
-    margin-top: 2em;
+    width: 85%;
+    margin: auto;
 }
 
 .container h1 {
@@ -188,13 +196,9 @@ nav {
     cursor: pointer;
 }
 
-.container h1:hover {
-    border-bottom: 2px solid #80351a;
-}
-
 .container h2 {
     color: #03346E;
-    font-size: 48px;
+    font-size: 43px;
     cursor: pointer;
 }
 
@@ -210,6 +214,9 @@ nav {
 .abtus {
     display: flex;
     margin-bottom: 4em;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
 }
 
 .intropara {
@@ -226,8 +233,9 @@ nav {
 
 .abouticon {
     display: flex;
-    gap: 7em;
+    gap: 3em;
     margin-bottom: 4em;
+    justify-content: center;
 }
 
 .iconbg {
@@ -286,6 +294,8 @@ i#fouricon {
     flex-direction: row;
     gap: 4em;
     padding: 4em;
+    width: 90%;
+    margin: auto;
 }
 
 .main {
@@ -580,6 +590,10 @@ i#fouricon {
     .wrapper {
         flex-direction: column;
         padding: 2em;
+    }
+
+    .audit {
+        gap: 4em;
     }
 
     .shoe img {
@@ -957,6 +971,12 @@ i#fouricon {
 
     .wrapper {
         padding: 3em;
+    }
+
+    .shoe img {
+        width: 100%;
+        height: 100%;
+
     }
 
     .audit {

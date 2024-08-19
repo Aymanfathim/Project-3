@@ -95,7 +95,7 @@
             text-align: center;
             background-color: #575555c4;
             color: white;
-            padding: 50px 20px;
+            padding: 40px 20px;
         }
 
         .contact-us h2 {
@@ -106,17 +106,19 @@
         .contact-us p {
             font-size: 16px;
         }
-.contact-us p a{
-    color: white;
-}
+
+        .contact-us p a {
+            color: white;
+        }
+
         .map {
             width: 50%;
-            padding: 3em;
         }
 
         .wrapper1 {
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
+            gap: 2em;
             align-items: center;
         }
 
@@ -134,29 +136,13 @@
             gap: 20px;
             padding: 3em;
         }
-        .map {
-            width: 100%;
-            height: 0;
-            padding-bottom: 75%;
-            position: relative;
-            flex: 1;
-        }
-
-        .map iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border: 0;
-        }
 
         .wrap {
             flex: 1;
             display: flex;
             flex-direction: column;
             justify-content: center;
-            gap: 4em;
+            gap: 2em;
             cursor: pointer;
         }
 
@@ -239,9 +225,10 @@
 
         /* Extra Small Devices (300px-575px) */
         @media (min-width:300px) and (max-width: 530px) {
-  .logo img {
+            .logo img {
                 height: 40px;
             }
+
             .logo {
                 order: 1;
             }
@@ -312,8 +299,17 @@
 
 
             .map iframe {
-                width: 100%;
                 height: 300px;
+            }
+
+            .map {
+                width: 90%;
+            }
+
+            .wrapper1 {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
             }
 
             .footer {
@@ -343,10 +339,12 @@
                 width: 98%;
             }
         }
-@media  (min-width: 531px) and (max-width: 575px){
-    .logo img {
+
+        @media (min-width: 531px) and (max-width: 575px) {
+            .logo img {
                 height: 40px;
             }
+
             .logo {
                 order: 1;
             }
@@ -421,6 +419,13 @@
                 height: 400px;
             }
 
+            .wrapper1 {
+                display: flex;
+                flex-direction: column;
+                gap: 2em;
+                align-items: center;
+            }
+
             .footer {
                 flex-direction: column;
                 align-items: center;
@@ -447,7 +452,8 @@
                 text-align: center;
                 width: 98%;
             }
-}
+        }
+
         /* Small Devices (576px-768px) */
         @media (min-width: 576px) and (max-width: 768px) {
             .navul {
@@ -466,18 +472,23 @@
             }
 
             .footer {
-                flex-direction: column;
+                flex-direction: row;
                 align-items: center;
                 height: auto;
                 padding-bottom: 2em;
-                gap: 0;
+                gap: 1em;
+            }
+
+            .socialmedia {
+                display: flex;
+                flex-direction: column;
             }
 
             .footer .links,
             .footer .mid-links,
             .footer .f-contact,
             .footer .connect {
-                width: 100%;
+                /* width: 100%; */
                 text-align: center;
                 margin-bottom: 1em;
             }
@@ -634,66 +645,59 @@
     </nav>
     <section class="contact-us">
         <h2>CONTACT US</h2>
-        <p><a href="contact.html">Home</a> / Contact Us</p>
+        <p><a href="index.html">Home</a> / Contact Us</p>
     </section>
+    <div class="text-center">Contact Us</div>
     <div class="wrapper1">
-        <div class="text-center">Contact Us</div>
-        <div class="content-row">
-            <!-- <div class="map">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.6658134352024!2d78.70534667366836!3d12.800190918616003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bad09068003a2a3%3A0xf3acdad5bd77b63d!2sLeather%20Land%20%26%20Shine%20Shoe%20Exports!5e0!3m2!1sen!2sin!4v1722581687891!5m2!1sen!2sin"
-                    width="500" height="550" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div> -->
-            <div class="map">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.6658134352024!2d78.70534667366836!3d12.800190918616003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bad09068003a2a3%3A0xf3acdad5bd77b63d!2sLeather%20Land%20%26%20Shine%20Shoe%20Exports!5e0!3m2!1sen!2sin!4v1722581687891!5m2!1sen!2sin"
-                    width="100%" height="450" style="border:0;" allowfullscreen allow="fullscreen" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade" title="Google Map of Leather Land & Shine Shoe Exports">
-                </iframe>
-            </div>
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.6658134352024!2d78.70534667366836!3d12.800190918616003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bad09068003a2a3%3A0xf3acdad5bd77b63d!2sLeather%20Land%20%26%20Shine%20Shoe%20Exports!5e0!3m2!1sen!2sin!4v1722581687891!5m2!1sen!2sin"
+                width="100%" height="450" style="border:0;" allowfullscreen allow="fullscreen" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade" title="Google Map of Leather Land & Shine Shoe Exports">
+            </iframe>
+        </div>
 
-            <div class="wrap">
-                <div class="wrap-1">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <div>
-                        <h1>Our Office Address</h1>
-                        <p>RP25+35F, Kandrampalli Road, Opposite to Perfect Shoe Fabric, Thutipet, Ambur, Tamil Nadu
-                            635802</p>
-                    </div>
+        <div class="wrap">
+            <div class="wrap-1">
+                <i class="fa-solid fa-location-dot"></i>
+                <div>
+                    <h1>Our Office Address</h1>
+                    <p>RP25+35F, Kandrampalli Road, Opposite to Perfect Shoe Fabric, Thutipet, Ambur, Tamil Nadu
+                        635802</p>
                 </div>
-                <div class="wrap-1">
-                    <i class="fa-solid fa-envelope"></i>
-                    <div>
-                        <h1>General Enquiries</h1>
-                        <mailto:h2>shineshoes@justdail.com</h2>
-                    </div>
+            </div>
+            <div class="wrap-1">
+                <i class="fa-solid fa-envelope"></i>
+                <div>
+                    <h1>General Enquiries</h1>
+                    <mailto:h2>shineshoes@justdail.com</h2>
                 </div>
-                <div class="wrap-1">
-                    <i class="fa-solid fa-phone"></i>
-                    <div>
-                        <h1>Call Us</h1>
-                        <h2>+91-9790242880</h2>
-                    </div>
+            </div>
+            <div class="wrap-1">
+                <i class="fa-solid fa-phone"></i>
+                <div>
+                    <h1>Call Us</h1>
+                    <h2>+91-9790242880</h2>
                 </div>
-                <div class="wrap-1">
-                    <i class="fa-regular fa-clock"></i>
-                    <div>
-                        <h1>Our Timings</h1>
-                        <h2>Mon-Sat 09:00 AM - 06:00 PM</h2>
-                    </div>
+            </div>
+            <div class="wrap-1">
+                <i class="fa-regular fa-clock"></i>
+                <div>
+                    <h1>Our Timings</h1>
+                    <h2>Mon-Sat 09:00 AM - 06:00 PM</h2>
                 </div>
-                <div class="wrap-1">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <div>
-                        <h1>Google Maps</h1>
-                        <h2><a href="https://www.google.com/maps/?cid=12344464494106448582"
-                                style="color: blue;">Visit</a></h2>
-                    </div>
+            </div>
+            <div class="wrap-1">
+                <i class="fas fa-map-marker-alt"></i>
+                <div>
+                    <h1>Google Maps</h1>
+                    <h2><a href="https://www.google.com/maps/?cid=12344464494106448582" style="color: blue;">Visit</a>
+                    </h2>
                 </div>
             </div>
         </div>
     </div>
+    <!-- </div> -->
 
     <!-- <footer> -->
     <div class="footer">

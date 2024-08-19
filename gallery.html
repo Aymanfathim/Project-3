@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,88 +21,90 @@
 </head>
 <style>
     * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
-}
-
-body {
-    background-color: #e1e1e1;
-    font-family: "Poppins", sans-serif;
-}
-
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 2em;
-    padding: 22px;
-    color: white;
-    background-color: #021526;
-}
-
-.logo img {
-    height: 50px;
-}
-
-.hamburger-icon {
-    border: none;
-    background-color: transparent;
-    display: none;
-}
-
-.hamburger-icon .fa-bars,
-.hamburger-icon .fa-x {
-    color: white;
-    font-size: 1rem;
-    cursor: pointer;
-}
-
-.hamburger-icon input[type="checkbox"] {
-    appearance: none;
-}
-
-.navul {
-    display: flex;
-    gap: 1rem;
-}
-
-.navul li {
-    color: white;
-    font-size: 20px;
-}
-
-.navul li:hover {
-    color: #3e90f5;
-}
-
-.navright {
-    display: flex;
-    gap: 1em;
-}
-@keyframes text {
-    0% {
-        color: black;
-        margin-bottom: -40%;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+        list-style: none;
     }
 
-    30% {
-        letter-spacing: 25px;
-        margin-bottom: -40px;
+    body {
+        background-color: #e1e1e1;
+        font-family: "Poppins", sans-serif;
     }
 
-    85% {
-        letter-spacing: 8px;
-        margin-bottom: 40px;
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2em;
+        padding: 22px;
+        color: white;
+        background-color: #021526;
     }
-}
-.gallery {
+
+    .logo img {
+        height: 50px;
+    }
+
+    .hamburger-icon {
+        border: none;
+        background-color: transparent;
+        display: none;
+    }
+
+    .hamburger-icon .fa-bars,
+    .hamburger-icon .fa-x {
+        color: white;
+        font-size: 1rem;
+        cursor: pointer;
+    }
+
+    .hamburger-icon input[type="checkbox"] {
+        appearance: none;
+    }
+
+    .navul {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .navul li {
+        color: white;
+        font-size: 20px;
+    }
+
+    .navul li:hover {
+        color: #3e90f5;
+    }
+
+    .navright {
+        display: flex;
+        gap: 1em;
+    }
+
+    @keyframes text {
+        0% {
+            color: black;
+            margin-bottom: -40%;
+        }
+
+        30% {
+            letter-spacing: 25px;
+            margin-bottom: -40px;
+        }
+
+        85% {
+            letter-spacing: 8px;
+            margin-bottom: 40px;
+        }
+    }
+
+    .gallery {
         text-align: center;
         background-color: #575555c4;
         color: white;
-        padding: 50px 20px;
+        padding: 40px 20px;
     }
 
     .gallery h2 {
@@ -112,459 +115,544 @@ nav {
     .gallery p {
         font-size: 16px;
     }
-    .gallery p a{
+
+    .gallery p a {
         color: white;
     }
-.videosec h3 {
-    display: flex;
-    justify-content: center;
-    color: #884A33;
-    margin: 10px;
-    font-size: 45px;
-    font-family: "Rubik", sans-serif;
-    gap: 10px;
-}
-
-.text2 {
-    font-size: 20px;
-    color: white;
-}
-
-.slide img {
-    height: 300px;
-    width: 300px;
-}
-
-.slide h3 {
-    font-family: "Arimo", sans-serif;
-    font-size: 20px;
-    bottom: 0px;
-    background-color: #20181899;
-    color: #f5fefe;
-}
-
-.slide h3:hover {
-    color: #ffd5d5;
-    border-bottom: 2px solid #f3caca99;
-}
-
-.slide_track {
-    display: flex;
-    gap: 40px 10px;
-    overflow-x: scroll;
-    overflow-y: hidden;
-}
-
-.slide_track::-webkit-scrollbar {
-    display: none;
-}
-.code{
-    float: right;
-}
-.whatsapp {
-    cursor: pointer;
-    position: fixed;
-    bottom: 5px;
-    right: 10px;
-    border-radius: 50%;
-}
-
-.whatsapp img {
-    width: 45px;
-    border-radius: 50%;
-}
-
-.footer {
-    display: flex;
-    height: 275px;
-    justify-content: center;
-    gap: 3em;
-    margin: auto;
-    padding: 10px;
-    padding-top: 3em;
-    padding-bottom: 16em;
-    background-color: #324d6624;
-}
-
-.footer li {
-    color: black;
-    line-height: 43px;
-}
-
-.footer li:hover {
-    color: #03346E;
-}
-
-.footer h5 {
-    line-height: 43px;
-}
-
-.connect h4 {
-    line-height: 43px;
-}
-
-.f-contact {
-    width: 45%;
-    line-height: 2;
-}
-
-.connect {
-    line-height: 2;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-/* Media Queries */
-
-/* 360px - 575px */
-@media (min-width:300px) and (max-width: 575px) {
-    .logo img {
-        height: 40px;
-    }
-
-    .logo {
-        order: 1;
-    }
-
-    .navul {
-        order: 3;
-        width: 100%;
-        flex-direction: column;
-        width: 100%;
-        align-items: center;
-        justify-content: space-between;
-        gap: 0.7rem;
-        height: 0;
-        overflow: hidden;
-        padding: 0;
-    }
-
-    .hamburger-icon {
-        border: none;
-        background-color: transparent;
-        display: block;
-    }
-
-    .ham-icon {
-        display: block;
-        order: 2;
-    }
-
-    i.fa-solid.fa-x {
-        display: none;
-    }
-
-    .hamburger-icon .fa-bars,
-    .hamburger-icon .fa-x {
-        color: white;
-        font-size: 28px;
-        cursor: pointer;
-    }
-
-    .nav:has(input[type="checkbox"]:checked) .navul {
-        margin-top: 1rem;
-        height: 270px;
-    }
-
-    .nav:has(input[type="checkbox"]:checked) .fa-bars {
-        display: none;
-    }
-
-    .nav:has(input[type="checkbox"]:checked) .fa-x {
-        display: inline-block;
-    }
-
-    .navright {
-        display: none;
-        order: 2;
-    }
-
-    .slogan {
-        font-size: 1.5em;
-    }
-
-    @keyframes text {
-        0% {
-            color: black;
-            margin-bottom: -40%;
-        }
-
-        30% {
-            color: gray;
-            letter-spacing: 11px;
-            margin-bottom: -40px;
-        }
-
-        85% {
-            letter-spacing: 8px;
-            margin-bottom: 40px;
-        }
-    }
-
-    .bannertitle .text1 {
-        font-size: 13px;
-    }
-
-    .bannertitle .text2 {
-        font-size: 10px;
-    }
-
-    .bannerimg img {
-        height: auto;
-    }
-
-    .bannerimg {
-        height: auto;
-    }
 
     .videosec h3 {
-        font-size: 1.5em;
-    }
-    .footer {
-        flex-direction: column;
-        align-items: center;
-        height: auto;
-        padding: 0;
-        gap: 1em;
-        padding-top: 2em;
-        padding-bottom: 1em;
-    }
-
-    .footer li {
-        line-height: 32px;
-    }
-
-    .footer .links,
-    .footer .mid-links,
-    .footer .f-contact,
-    .footer .connect {
-        width: 100%;
-        text-align: center;
-    }
-
-    .footer .f-contact p {
-        text-align: center;
-        width: 98%;
-    }
-}
-
-/* 576px - 768px */
-@media (min-width: 576px) and (max-width: 768px) {
-    .logo img {
-        height: 40px;
-    }
-
-    .bannerimg img {
-        height: auto;
-    }
-
-    .bannerimg {
-        height: auto;
-    }
-
-    @keyframes text {
-        0% {
-            color: black;
-            margin-bottom: -40%;
-        }
-
-        30% {
-            color: rgb(86, 82, 82);
-            letter-spacing: 14px;
-            margin-bottom: -40px;
-        }
-
-        85% {
-            letter-spacing: 4px;
-            margin-bottom: 40px;
-            font-size: 24px;
-        }
-    }
-
-    .bannertitle .text1 {
-        font-size: 32px;
-        letter-spacing: 4px;
-    }
-
-    .videosec h3 {
-        font-size: 1.5em;
-    }
-    .footer {
-        flex-direction: column;
-        align-items: center;
-        height: auto;
-        padding-bottom: 2em;
-        gap: 0;
-    }
-
-    .footer .links,
-    .footer .mid-links,
-    .footer .f-contact,
-    .footer .connect {
-        width: 100%;
-        text-align: center;
-        margin-bottom: 1em;
-    }
-
-    .footer .f-contact p {
-        text-align: center;
-        padding: 0em 4em;
-    }
-}
-
-/* 769px - 991px */
-@media (min-width: 769px) and (max-width: 991px) {
-    .nav {
-        gap: 1em;
-    }
-
-    .logo img {
-        height: 45px;
-    }
-
-    .navul {
-        gap: 0.75rem;
-    }
-
-    .navright img {
-        height: 20px;
-    }
-
-    .slogan {
-        font-size: 1.5em;
-    }
-
-    .bannerimg img {
-        height: auto;
-    }
-
-    .bannerimg {
-        height: auto;
-    }
-
-    @keyframes text {
-        0% {
-            color: black;
-            margin-bottom: -40%;
-        }
-
-        30% {
-            color: rgb(86, 82, 82);
-            letter-spacing: 14px;
-            margin-bottom: -40px;
-        }
-
-        85% {
-            letter-spacing: 4px;
-            margin-bottom: 40px;
-            font-size: 24px;
-        }
-    }
-
-    .bannertitle .text1 {
-        font-size: 42px;
-    }
-
-    .videosec h3 {
-        font-size: 2em;
-    }
-    .footer {
-        flex-direction: row;
-        justify-content: space-around;
-        height: auto;
-        padding-bottom: 2em;
-        align-items: center;
-    }
-
-    .footer .links,
-    .footer .mid-links,
-    .footer .f-contact,
-    .footer .connect {
-        text-align: center;
-        margin-bottom: 1em;
-    }
-
-    .links {
-        width: 116px;
-    }
-
-    .footer .f-contact p {
-        text-align: center;
-    }
-
-    .socialmedia {
         display: flex;
-        flex-direction: column;
-    }
-}
-/* 992px - 1200px */
-@media (min-width: 992px) and (max-width: 1200px) {
-    .logo img {
-        height: 50px;
-    }
-
-    .navul {
-        gap: 1rem;
+        justify-content: center;
+        color: #884A33;
+        margin: 10px;
+        font-size: 45px;
+        font-family: "Rubik", sans-serif;
+        gap: 10px;
     }
 
-    .navright img {
-        height: 25px;
+    .text2 {
+        font-size: 20px;
+        color: white;
     }
 
-    .slogan {
-        font-size: 2em;
-    }
-
-    .bannerimg img {
-        height: auto;
-    }
-
-    .bannerimg {
-        height: auto;
-    }
-
-    .videosec h3 {
-        font-size: 2.5em;
+    .card:hover {
+        box-shadow: 0 0 40px rgba(66, 65, 65, 0.8);
     }
 
     .container {
-        padding: 2em;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        margin-bottom: 50px;
     }
+
+    .card {
+        position: relative;
+        width: 342px;
+        height: 260px;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .card img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s;
+    }
+
+    .card h2 {
+        font-size: xx-large;
+        font-weight: bold;
+        font-family: serif;
+    }
+
+    .card .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6);
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        transition: opacity 0.3s;
+    }
+
+    .card:hover img {
+        transform: scale(1.1);
+    }
+
+    .card:hover .overlay {
+        opacity: 1;
+    }
+
+
+    .width:hover {
+        transform: scale(1.1);
+    }
+    .whatsapp {
+        cursor: pointer;
+        position: fixed;
+        bottom: 5px;
+        right: 10px;
+        border-radius: 50%;
+    }
+
+    .whatsapp img {
+        width: 45px;
+        border-radius: 50%;
+    }
+
     .footer {
+        display: flex;
+        height: 275px;
+        justify-content: center;
+        gap: 3em;
+        margin: auto;
+        padding: 10px;
+        padding-top: 3em;
+        padding-bottom: 16em;
+        background-color: #324d6624;
+    }
+
+    .footer li {
+        color: black;
+        line-height: 43px;
+    }
+
+    .footer li:hover {
+        color: #03346E;
+    }
+
+    .footer h5 {
+        line-height: 43px;
+    }
+
+    .connect h4 {
+        line-height: 43px;
+    }
+
+    .f-contact {
+        width: 45%;
+        line-height: 2;
+    }
+
+    .connect {
+        line-height: 2;
+        display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    .footer .f-contact,
-    .footer .links,
-    .footer .mid-links,
-    .footer .connect {
-        width: 100%;
-        text-align: center;
+    /* Media Queries */
+
+    /* 36=00px - 575px */
+    @media (min-width:300px) and (max-width: 575px) {
+        .logo img {
+            height: 40px;
+        }
+
+        .logo {
+            order: 1;
+        }
+
+        .navul {
+            order: 3;
+            width: 100%;
+            flex-direction: column;
+            width: 100%;
+            align-items: center;
+            justify-content: space-between;
+            gap: 0.7rem;
+            height: 0;
+            overflow: hidden;
+            padding: 0;
+        }
+
+        .hamburger-icon {
+            border: none;
+            background-color: transparent;
+            display: block;
+        }
+
+        .ham-icon {
+            display: block;
+            order: 2;
+        }
+
+        i.fa-solid.fa-x {
+            display: none;
+        }
+
+        .hamburger-icon .fa-bars,
+        .hamburger-icon .fa-x {
+            color: white;
+            font-size: 28px;
+            cursor: pointer;
+        }
+
+        .nav:has(input[type="checkbox"]:checked) .navul {
+            margin-top: 1rem;
+            height: 270px;
+        }
+
+        .nav:has(input[type="checkbox"]:checked) .fa-bars {
+            display: none;
+        }
+
+        .nav:has(input[type="checkbox"]:checked) .fa-x {
+            display: inline-block;
+        }
+
+        .navright {
+            display: none;
+            order: 2;
+        }
+
+        .slogan {
+            font-size: 1.5em;
+        }
+
+        @keyframes text {
+            0% {
+                color: black;
+                margin-bottom: -40%;
+            }
+
+            30% {
+                color: gray;
+                letter-spacing: 11px;
+                margin-bottom: -40px;
+            }
+
+            85% {
+                letter-spacing: 8px;
+                margin-bottom: 40px;
+            }
+        }
+
+        .bannertitle .text1 {
+            font-size: 13px;
+        }
+
+        .bannertitle .text2 {
+            font-size: 10px;
+        }
+
+        .bannerimg img {
+            height: auto;
+        }
+
+        .bannerimg {
+            height: auto;
+        }
+
+        .videosec h3 {
+            font-size: 1.5em;
+        }
+
+        .container {
+            flex-direction: column;
+            width: 100%;
+            height: auto;
+        }
+
+        .card h2 {
+            font-size: 2em;
+            font-weight: bold;
+            font-family: serif;
+        }
+
+        .footer {
+            flex-direction: column;
+            align-items: center;
+            height: auto;
+            padding: 0;
+            gap: 1em;
+            padding-top: 2em;
+            padding-bottom: 1em;
+        }
+
+        .footer li {
+            line-height: 32px;
+        }
+
+        .footer .links,
+        .footer .mid-links,
+        .footer .f-contact,
+        .footer .connect {
+            width: 100%;
+            text-align: center;
+        }
+
+        .footer .f-contact p {
+            text-align: center;
+            width: 98%;
+        }
     }
 
-    .footer {
-        flex-direction: row;
-        justify-content: space-between;
-        height: auto;
-        padding-bottom: 2em;
+    /* 576px - 768px */
+    @media (min-width: 576px) and (max-width: 768px) {
+        .logo img {
+            height: 40px;
+        }
+
+        .bannerimg img {
+            height: auto;
+        }
+
+        .bannerimg {
+            height: auto;
+        }
+
+        @keyframes text {
+            0% {
+                color: black;
+                margin-bottom: -40%;
+            }
+
+            30% {
+                color: rgb(86, 82, 82);
+                letter-spacing: 14px;
+                margin-bottom: -40px;
+            }
+
+            85% {
+                letter-spacing: 4px;
+                margin-bottom: 40px;
+                font-size: 24px;
+            }
+        }
+
+        .bannertitle .text1 {
+            font-size: 32px;
+            letter-spacing: 4px;
+        }
+
+        .videosec h3 {
+            font-size: 1.5em;
+        }
+
+        .container {
+            width: 100%;
+            height: auto;
+        }
+
+        .card h2 {
+            font-size: 2em;
+            font-weight: bold;
+            font-family: serif;
+        }
+
+        .footer {
+            flex-direction: column;
+            align-items: center;
+            height: auto;
+            padding-bottom: 2em;
+            gap: 0;
+        }
+
+        .footer .links,
+        .footer .mid-links,
+        .footer .f-contact,
+        .footer .connect {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 1em;
+        }
+
+        .footer .f-contact p {
+            text-align: center;
+            padding: 0em 4em;
+        }
     }
 
-    .footer .links,
-    .footer .mid-links,
-    .footer .f-contact,
-    .footer .connect {
-        width: 45%;
-        text-align: center;
-        margin-bottom: 1em;
+    /* 769px - 991px */
+    @media (min-width: 769px) and (max-width: 991px) {
+        .nav {
+            gap: 1em;
+        }
+
+        .logo img {
+            height: 45px;
+        }
+
+        .navul {
+            gap: 0.75rem;
+        }
+
+        .navright img {
+            height: 20px;
+        }
+
+        .slogan {
+            font-size: 1.5em;
+        }
+
+        .bannerimg img {
+            height: auto;
+        }
+
+        .bannerimg {
+            height: auto;
+        }
+
+        @keyframes text {
+            0% {
+                color: black;
+                margin-bottom: -40%;
+            }
+
+            30% {
+                color: rgb(86, 82, 82);
+                letter-spacing: 14px;
+                margin-bottom: -40px;
+            }
+
+            85% {
+                letter-spacing: 4px;
+                margin-bottom: 40px;
+                font-size: 24px;
+            }
+        }
+
+        .bannertitle .text1 {
+            font-size: 42px;
+        }
+
+        .videosec h3 {
+            font-size: 2em;
+        }
+
+        .card {
+            width: 31%;
+            height: auto;
+            margin-bottom: 5em;
+        }
+
+        .card img {
+            height: 270px;
+        }
+
+        .container {
+            width: 100%;
+            height: auto;
+        }
+
+        .card h2 {
+            font-size: 2em;
+            font-weight: bold;
+            font-family: serif;
+        }
+
+        .footer {
+            flex-direction: row;
+            justify-content: space-around;
+            height: auto;
+            padding-bottom: 2em;
+            align-items: center;
+        }
+
+        .footer .links,
+        .footer .mid-links,
+        .footer .f-contact,
+        .footer .connect {
+            text-align: center;
+            margin-bottom: 1em;
+        }
+
+        .links {
+            width: 116px;
+        }
+
+        .footer .f-contact p {
+            text-align: center;
+        }
+
+        .socialmedia {
+            display: flex;
+            flex-direction: column;
+        }
     }
 
-    .footer .f-contact p {
-        text-align: center;
-    }
-}
+    /* 992px - 1200px */
+    @media (min-width: 992px) and (max-width: 1200px) {
+        .logo img {
+            height: 50px;
+        }
 
+        .navul {
+            gap: 1rem;
+        }
+
+        .navright img {
+            height: 25px;
+        }
+
+        .slogan {
+            font-size: 2em;
+        }
+
+        .bannerimg img {
+            height: auto;
+        }
+
+        .bannerimg {
+            height: auto;
+        }
+
+        .videosec h3 {
+            font-size: 2.5em;
+        }
+
+        .container {
+            padding: 2em;
+        }
+
+        .footer {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .footer .f-contact,
+        .footer .links,
+        .footer .mid-links,
+        .footer .connect {
+            width: 100%;
+            text-align: center;
+        }
+
+        .footer {
+            flex-direction: row;
+            justify-content: space-between;
+            height: auto;
+            padding-bottom: 2em;
+        }
+
+        .footer .links,
+        .footer .mid-links,
+        .footer .f-contact,
+        .footer .connect {
+            width: 45%;
+            text-align: center;
+            margin-bottom: 1em;
+        }
+
+        .footer .f-contact p {
+            text-align: center;
+        }
+    }
 </style>
+
 <body>
     <nav>
         <div class="logo">
@@ -605,93 +693,116 @@ nav {
 
     <div class="videosec">
         <h3>Best Sellers</h3>
-        <video src="https://cdn.shopify.com/videos/c/o/v/a30bb3562b4b436cbd86d27b66ca5cab.mp4" loop="" autoplay=""
-            muted="" playsinline="" preload="auto" style="width:100%;height:auto;"></video>
     </div>
-    <section class="slider">
-        <div class="slide_track">
-            <div class="slide">
-                <h3>Top Grain Genuine Leather</h3>
-                <img src="topgrain.jpg" alt="">
-            </div>
-            <div class="slide">
-                <h3>Buttery Soft Nappa Calfskin</h3>
-                <img src="nappacalfskin2.jpg" alt="">
-            </div>
-            <div class="slide">
-                <h3>White Patent Crocodile Print</h3>
-                <img src="crocoprint.jpg" alt="">
-            </div>
-            <div class="slide">
-                <h3>Finished Full Grain Leather</h3>
-                <img src="https://img1.exportersindia.com/product_images/bc-full/2020/10/6939230/full-grain-leather-1603265086-5614481.jpeg"
-                    alt="">
-            </div>
-            <div class="slide">
-                <h3>Mirror Patent Brown Nappa</h3>
-                <img src="mirrorpatentbrown.jpg" alt="">
-            </div>
-            <div class="slide">
-                <h3>Milled Waterproof Soft Nubuck</h3>
-                <img src="nubuck.jpg" alt="">
-            </div>
-            <div class="slide">
-                <h3>Cow Embossed Modern PU</h3>
-                <img src="modernpu.jpg" alt="">
-            </div>
-        </div>
-        <div>
-    </section>
+    <img src="gallerybanner-transformed.jpeg" alt="">
 
-     <!-- <footer> -->
-        <div class="footer">
-            <div class="whatsapp">
-                <a href="https://api.whatsapp.com/send?phone=919790242880&amp;text=Hi">
-                    <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/whtsapp.png?v=1709276301">
-                </a>
-            </div>
-            <div class="links">
-                <ul>
-                    <h4>USEFUL LINKS</h4>
-                    <a href="index.html">
-                        <li>HOME</li>
-                    </a>
-                    <a href="about.html">
-                        <li>ABOUT US</li>
-                    </a>
-                    <a href="gallery.html">
-                        <li>GALLERY</li>
-                    </a>
-                    <a href="contact.html">
-                        <li>CONTACT US</li>
-                    </a>
-                </ul>
-            </div>
-            <div class="mid-links">
-                <ul>
-                    <br>
-                    <li>PRIVACY POLICY</li>
-                    <li>PRODUCTS</li>
-                    <li>CATEGORIES</li>
-                    <li>TESTIMONIALS</li>
-                </ul>
-            </div>
-            <div class="f-contact">
-                <h4>CONTACT</h4>
-                <p>RP25+35F, Kandrampalli Road, Opposite to Perfect Shoe Fabric, Thutipet, Ambur, Tamil Nadu 635802</p>
-                <h5 class="phoneno">+91-9790242880</h5>
-                <h5 class="justdial">shineshoes@justdial.com</h5>
-            </div>
-            <div class="connect">
-                <h4>CONNECT</h4>
-                <div class="socialmedia">
-                    <a href="https://facebook.com"><img class="connectslot" src="facebook.png" alt=""></a>
-                    <a href="https://linkedin.com"><img class="connectslot" src="linkedin.png" alt=""></a>
-                    <a href="https://youtube.com"><img class="connectslot" src="youtube.png" alt=""></a>
-                    <a href="https://instagram.com"><img class="connectslot" src="instagram.png" alt=""></a>
-                    <a href="https://twitter.com"><img class="connectslot" src="twitter.png" alt=""></a>
-                </div>
+    <div class="container">
+        <div class="card">
+            <img src="crocoprint.jpg" alt="Image">
+            <div class="overlay">
+                <h2>Crocodile Print</h2>
             </div>
         </div>
+        <div class="card">
+            <img src="dark-brown-leather-with-white-stripe_265515-11775.jpg" alt="Image">
+            <div class="overlay">
+                <h2>Full Grain</h2>
+            </div>
+        </div>
+        <div class="card">
+            <img src="mettique.jpg" alt="Image">
+            <div class="overlay">
+                <h2>Flat Grain</h2>
+            </div>
+        </div>
+        <div class="card">
+            <img src="mirrorpatentbrown.jpg" alt="Image">
+            <div class="overlay">
+                <h2>Brown Nappa</h2>
+            </div>
+        </div>
+        <div class="card">
+            <img src="modernpu.jpg" alt="Image">
+            <div class="overlay">
+                <h2>Cow Modern PU</h2>
+            </div>
+        </div>
+        <div class="card">
+            <img src="nappacalfskin2.jpg" alt="Image">
+            <div class="overlay">
+                <h2>Nappa Calfskin</h2>
+            </div>
+        </div>
+        <div class="card">
+            <img src="nubuck.jpg" alt="Image">
+            <div class="overlay">
+                <h2>Milled Nubuck</h2>
+            </div>
+        </div>
+        <div class="card">
+            <img src="topgrain.jpg" alt="Image">
+            <div class="overlay">
+                <h2>Top Grain</h2>
+            </div>
+        </div>
+        <div class="card">
+            <img src="tan.jpg" alt="Image">
+            <div class="overlay">
+                <h2>CG Softy</h2>
+            </div>
+        </div>
+    </div>
+
+    <!-- <footer> -->
+    <div class="footer">
+        <div class="whatsapp">
+            <a href="https://api.whatsapp.com/send?phone=919790242880&amp;text=Hi">
+                <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/whtsapp.png?v=1709276301">
+            </a>
+        </div>
+        <div class="links">
+            <ul>
+                <h4>USEFUL LINKS</h4>
+                <a href="index.html">
+                    <li>HOME</li>
+                </a>
+                <a href="about.html">
+                    <li>ABOUT US</li>
+                </a>
+                <a href="gallery.html">
+                    <li>GALLERY</li>
+                </a>
+                <a href="contact.html">
+                    <li>CONTACT US</li>
+                </a>
+            </ul>
+        </div>
+        <div class="mid-links">
+            <ul>
+                <br>
+                <li>PRIVACY POLICY</li>
+                <li>PRODUCTS</li>
+                <li>CATEGORIES</li>
+                <li>TESTIMONIALS</li>
+            </ul>
+        </div>
+        <div class="f-contact">
+            <h4>CONTACT</h4>
+            <p>RP25+35F, Kandrampalli Road, Opposite to Perfect Shoe Fabric, Thutipet, Ambur, Tamil Nadu 635802</p>
+            <h5 class="phoneno">+91-9790242880</h5>
+            <h5 class="justdial">shineshoes@justdial.com</h5>
+        </div>
+        <div class="connect">
+            <h4>CONNECT</h4>
+            <div class="socialmedia">
+                <a href="https://facebook.com"><img class="connectslot" src="facebook.png" alt=""></a>
+                <a href="https://linkedin.com"><img class="connectslot" src="linkedin.png" alt=""></a>
+                <a href="https://youtube.com"><img class="connectslot" src="youtube.png" alt=""></a>
+                <a href="https://instagram.com"><img class="connectslot" src="instagram.png" alt=""></a>
+                <a href="https://twitter.com"><img class="connectslot" src="twitter.png" alt=""></a>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
