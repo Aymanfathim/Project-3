@@ -61,6 +61,10 @@ nav {
     font-weight: bolds;
 }
 
+.navul a.active {
+    border-bottom: 2px solid white;
+}
+
 .navright {
     display: flex;
     gap: 1em;
