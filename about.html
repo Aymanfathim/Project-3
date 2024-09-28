@@ -245,7 +245,52 @@
         padding: 10px;
         border-radius: 44%;
         background-color: #ababab6b;
-    }
+    } 
+
+    .partners-section {
+    padding: 50px 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.partners-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #03346E;
+}
+
+.partners-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.partner-card {
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.partner-card:hover {
+    transform: translateY(-10px);
+}
+
+.partner-logo img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
 
     .whatsapp {
         cursor: pointer;
@@ -814,7 +859,20 @@
         </div>
     </div>
     </div>
+<!-- Our Partner -->
+ <div class="partner">
+    <section class="partners-section">
+        <h2>Our Partner</h2>
+        <div class="partners-container">
+            <div class="partner-card">
+                <div class="partner-logo">
+                    <img src="leatherland.png" alt="Leather Land Logo" class="logo">
+                </div>
+            </div>
+        </div>
+    </section>
 
+ </div>
     <!-- <footer> -->
     <div class="footer">
         <div class="whatsapp">
